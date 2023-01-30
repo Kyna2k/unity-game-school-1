@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using UnityEngine;
 
 public class CayNam : MonoBehaviour
@@ -37,4 +38,25 @@ public class CayNam : MonoBehaviour
         }
         transform.Translate(vector3 * speed * Time.deltaTime);
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        ContactPoint2D[] contacts = new ContactPoint2D[2];
+
+        collision.GetContacts(contacts);
+
+        if (collision.gameObject.tag == "matdat")
+        {
+            //Vector2 info = contacts[0].normal;
+
+            //if (info.y == -1)
+            //{
+            //    gameObject.GetComponent<Rigidbody2D>().simulated= false;
+            //}
+        }
+    }
+
 }

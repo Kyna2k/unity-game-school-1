@@ -59,6 +59,5 @@ public class ConRua : MonoBehaviour
 
         }
         transform.localScale = scale;
-        Debug.Log(scale.x);
     }
 }

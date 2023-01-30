@@ -10,6 +10,7 @@ public class DiChuyen : MonoBehaviour
     public Animator animator;
     public float vanToc;
     private bool isDangDungTrenSan;
+    private  ContactPoint2D[] contacts = new ContactPoint2D[2];
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,7 @@ public class DiChuyen : MonoBehaviour
         animator = GetComponent<Animator>();
         vanToc = 0;
         isDangDungTrenSan = true;
-        speed = 2f;
+        speed = 8f;
     }
 
     // Update is called once per frame
@@ -67,8 +68,13 @@ public class DiChuyen : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            rigidbody2D.AddForce(new Vector2(0, 300));
-            isDangDungTrenSan = false;
+            if(isDangDungTrenSan)
+            {
+                rigidbody2D.AddForce(new Vector2(0, 300));
+                isDangDungTrenSan = false;
+            }
+
+           
             
         }
 
@@ -91,6 +97,15 @@ public class DiChuyen : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        collision.GetContacts(contacts);
+        if (collision.gameObject.tag == "CayNam")
+        {
+            Debug.Log("hello");
+            Vector2 info = contacts[0].point;
+            if (info.x == 1) Debug.Log("Right");
+            if (info.x == -1) Debug.Log("left");
+            if (info.y == 1) Debug.Log("Up");
+            if (info.y == -1) Debug.Log("Down");
+        }
     }
 }

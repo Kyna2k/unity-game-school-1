@@ -5,6 +5,7 @@ using UnityEngine;
 public class Camera : MonoBehaviour
 {
     // Start is called before the first frame update
+    public float left, right;
     public GameObject Mario;
     void Start()
     {
@@ -18,7 +19,14 @@ public class Camera : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        transform.position = new Vector3(Mario.transform.position.x, transform.position.y,
+        var CameraX = transform.position.x;
+        var CameraY = transform.position.y;
+        if(Mario.transform.position.x >= left && Mario.transform.position.x <= right)
+        {
+            transform.position = new Vector3(Mario.transform.position.x, transform.position.y,
             transform.position.z);
+        }
+
+        
     }
 }
