@@ -4400,9 +4400,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: cayNam
       objectReference: {fileID: 0}
+    - target: {fileID: 2875287419707326112, guid: dea54c33edb22e14c82af82b2bf82195, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2875287419707326113, guid: dea54c33edb22e14c82af82b2bf82195, type: 3}
       propertyPath: m_Mass
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2875287419707326113, guid: dea54c33edb22e14c82af82b2bf82195, type: 3}
+      propertyPath: m_Simulated
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2875287419707326115, guid: dea54c33edb22e14c82af82b2bf82195, type: 3}
       propertyPath: m_RootOrder

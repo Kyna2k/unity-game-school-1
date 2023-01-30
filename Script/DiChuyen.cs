@@ -100,12 +100,8 @@ public class DiChuyen : MonoBehaviour
         collision.GetContacts(contacts);
         if (collision.gameObject.tag == "CayNam")
         {
-            Debug.Log("hello");
-            Vector2 info = contacts[0].point;
-            if (info.x == 1) Debug.Log("Right");
-            if (info.x == -1) Debug.Log("left");
-            if (info.y == 1) Debug.Log("Up");
-            if (info.y == -1) Debug.Log("Down");
+            
+
         }
     }
 }
