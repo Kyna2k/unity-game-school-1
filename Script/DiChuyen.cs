@@ -69,7 +69,7 @@ public class DiChuyen : MonoBehaviour
             vanToc = 0;
 
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             PlaySounds("Sounds/Jump");
             if(isDangDungTrenSan)
