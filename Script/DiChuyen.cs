@@ -10,7 +10,9 @@ public class DiChuyen : MonoBehaviour
     public Animator animator;
     public float vanToc;
     private bool isDangDungTrenSan;
-    private  ContactPoint2D[] contacts = new ContactPoint2D[2];
+    private Animator die;
+    private AudioSource audioSource;
+    //public AudioClip souce_Nam;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,7 @@ public class DiChuyen : MonoBehaviour
         vanToc = 0;
         isDangDungTrenSan = true;
         speed = 8f;
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -68,11 +71,13 @@ public class DiChuyen : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            PlaySounds("Sounds/Jump");
             if(isDangDungTrenSan)
             {
-                rigidbody2D.AddForce(new Vector2(0, 300));
+                rigidbody2D.AddForce(new Vector2(0, 400));
                 isDangDungTrenSan = false;
             }
+            
 
            
             
@@ -97,11 +102,31 @@ public class DiChuyen : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.GetContacts(contacts);
-        if (collision.gameObject.tag == "CayNam")
+        if (collision.gameObject.tag == "CayNamLeft" || collision.gameObject.tag == "CayNamRight")
         {
-            
+            animator.SetBool("chetTrongLong", true);
+            PlaySounds("Sounds/Die");
+            rigidbody2D.AddForce(new Vector2(0, 200));
+            gameObject.GetComponent<BoxCollider2D>().isTrigger= true;
+        }
+        if(collision.gameObject.tag == "CayNamTop")
+        {
+            die = collision.transform.parent.GetComponent<Animator>();
+            PlaySounds("Sounds/Kick");
+            die.SetBool("NamIsDie", true);
+            StartCoroutine(CayNamChetNhungTinhYeuAnhDanhChoEmVanConDo(die));
 
         }
     }
+    private IEnumerator CayNamChetNhungTinhYeuAnhDanhChoEmVanConDo(Animator enemy)
+    {
+        
+        yield return new WaitForSeconds(0.3f);
+        Destroy(enemy.gameObject);
+    }
+
+    public void PlaySounds(string name)
+    {
+        audioSource.PlayOneShot(Resources.Load<AudioClip>(name));
+    }    
 }

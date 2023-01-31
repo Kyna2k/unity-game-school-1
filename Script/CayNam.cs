@@ -7,12 +7,12 @@ public class CayNam : MonoBehaviour
 {
     public float left, right;
     public float speed;
-    public new Rigidbody2D Rigidbody2D;
+    private Rigidbody2D rigidbody2D;
     public bool isRight;
     // Start is called before the first frame update
     void Start()
     {
-        Rigidbody2D = GetComponent<Rigidbody2D>();
+        rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame

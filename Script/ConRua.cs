@@ -7,7 +7,7 @@ public class ConRua : MonoBehaviour
 {
     public float left, right;
     public float speed;
-    public new Rigidbody2D Rigidbody2D;
+    private Rigidbody2D Rigidbody2D;
     public bool isRight;
     // Start is called before the first frame update
     void Start()
