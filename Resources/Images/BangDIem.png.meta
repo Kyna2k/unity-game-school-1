@@ -1,0 +1,3611 @@
+fileFormatVersion: 2
+guid: 8074fe29555e38a41adea21c6fda2541
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BangDIem_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 805
+        width: 76
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 376b1e916ee7754438f49c679da39a8f
+      internalID: -62300609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 837
+        width: 137
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7a77aa1c95c3144857399b10211ea7
+      internalID: -1841724399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_2
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 853
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36cb85f3803b44d44bdbc15690add5cf
+      internalID: 584129666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_3
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 853
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a18b117659ced449a1fc1b3e5d421c
+      internalID: -68931721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_4
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 853
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a1b065f785cd4040a6b10033480dfd7
+      internalID: -2109731162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_5
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 853
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f869e1193344c914e9041f4ce819b13f
+      internalID: -629909160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 853
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d38c8b35dc2c54792dd4120c1d8be1
+      internalID: -957878051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_7
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 853
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07fd753056297bd4894cb00de872653c
+      internalID: -1767423941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_8
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 853
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095be9a6da69bf145a01e34c663b20d2
+      internalID: 1582704554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_9
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 853
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 723a92f6ed66486408f0d01bc06eabbb
+      internalID: 519511905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_10
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 853
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2b99790460f584a9d73a0c3576612c
+      internalID: 497130486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_11
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 853
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f9d2ac92a9678479a875efeb09d4e5
+      internalID: -1191131943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_12
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 853
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a6b93b929fd064ea253291c2e6a625
+      internalID: 2005158207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_13
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 853
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb7f9b4d4b5867841951d4dfea51f3b2
+      internalID: -2103970543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_14
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 853
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac435ee2a7089546b08b16202ee022a
+      internalID: 158535362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_15
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 853
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4de64183421954a9256c63f2ac8a02
+      internalID: -165569341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_16
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 853
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bae8cd54abbaca47aaa6bd286ae3d93
+      internalID: -12733585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_17
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 853
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95eaee70d3aea52428278bffc90eeddf
+      internalID: -1725215474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_18
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 824
+        width: 88
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14a6d144aef9a4a42be342ddcf65613d
+      internalID: 1660255305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_19
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 824
+        width: 88
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a805be07dd270b4cb3513e618132c5e
+      internalID: -1621891452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_20
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 844
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa06a80e5bee9694e86274c0278156e0
+      internalID: -879605997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_21
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 844
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db399bf2333402459b4cd484a3e203c
+      internalID: 1265726159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_22
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 844
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f9ce9b48c2c134ca7a057e40fdd78d
+      internalID: -571234713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_23
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 844
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c97a440cc73084d95c61b0f8823ca3
+      internalID: 915181770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_24
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 844
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a7f8ac585fe3249bf33278c2b2e446
+      internalID: 545113171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_25
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 844
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e52ac406d507db43894af75a2347c39
+      internalID: -562327829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_26
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 844
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b21e4e84ab70242b4d192747a4a745
+      internalID: 1939994758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_27
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 844
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f85ae67a9081f64480afc68c070db77
+      internalID: -1351955769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_28
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 844
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 830e849156e597246843ef0bdd4bcd73
+      internalID: -1313222834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_29
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 844
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1450ddbbc56c6e948bb818cd1bdef930
+      internalID: -22678256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_30
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 844
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c0075f316bd4a4cbcac2f34c709b36
+      internalID: 441790726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_31
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 844
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e25ef5c49911943a2281c9ccb0a6fa
+      internalID: -1334273049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_32
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 844
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26905d01cc44f9640a0106780efa4ca9
+      internalID: 478196326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_33
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 844
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d508e6f9c485f4cbf9f761707924d2
+      internalID: -1272898352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_34
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 844
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e254b8b46d63aa5468adc22d11282199
+      internalID: 101123423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_35
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 844
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bedd670fa9df4545baa625e44c90c66
+      internalID: 2128812726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_36
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 837
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13dbe5a2fbc89ba4f8918b6785476c75
+      internalID: 1186914569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_37
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 837
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0921bc7fab663d4d94c09403ad96344
+      internalID: 1311114215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_38
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 837
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd7bd7857f40df4c82ce1ce1dafa587
+      internalID: 1337107467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_39
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 837
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72388c50e565c3f4f8d0f30fabd12f13
+      internalID: 1274098092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_40
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 837
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c2a3f46858d8fb4b850df5627d41db6
+      internalID: 1925602664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_41
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 837
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52549a29d8f9484aa7396df668f9971
+      internalID: 2001313006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_42
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 837
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d618d40fc8b754b8bd25d2bc3067d7
+      internalID: 612281686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_43
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 837
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27dcd01722724aa419644ec2853e6aa0
+      internalID: -3851683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_44
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 835
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cabcf1e0c2d8bc74fa5743040e7e8911
+      internalID: 1529745043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_45
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 835
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38af2f6db306d84f89f41aa33dcdb11
+      internalID: 379795938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_46
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 835
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531c48b8fc64fd94a90363af3ff30900
+      internalID: -471541313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_47
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 835
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48d44337641bc634281bfb2704942bed
+      internalID: -1852882584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_48
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 835
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab3ef004c7e6b44298b7bfb224267f2
+      internalID: 589453394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_49
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 836
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 227631376f80f954ea9609c3acfb0d79
+      internalID: -1922004480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_50
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 834
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22da8bbd33034e3488719466414c02b9
+      internalID: -811635123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_51
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 821
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a93c2a014abb843895f0a2548764c0
+      internalID: 655621137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_52
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 829
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00398e9efe6712748a2ea42576d27af0
+      internalID: -727210136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_53
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 821
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1135dde96e6823847b3b830da1445f2e
+      internalID: 947840690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_54
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 814
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb3888b0a853e547875f36d8f40d929
+      internalID: -1203798463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_55
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 814
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5b17e3e387aa54b8483c80f67f1554
+      internalID: 1642846435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_56
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 821
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2273754a3caae4a85fe29df6054b4f
+      internalID: 542273891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_57
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 826
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae1f44439b1ddbf438c3952c79f05e8d
+      internalID: 1936864123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_58
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 826
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a259916a9caa8e547aa02df8e744fc4f
+      internalID: 1545971798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_59
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 826
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e46ebc927431b649919337e38c4598b
+      internalID: -284936373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_60
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 826
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcbac485659439f468f0a87857fa0aec
+      internalID: -1342216430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_61
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 826
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85c1be544c1fb14ea4406404527a08e
+      internalID: 1025536576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_62
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 826
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27117ebd73afd3d4389a1ac8cb889582
+      internalID: -1903637330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_63
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 826
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4865ae2df5e1f8e4a8fd4d05388a3ce5
+      internalID: -2105225566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_64
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 826
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 298a5ff10721ee94c99c25b6fe00440a
+      internalID: -793660263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_65
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 826
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68bd5a8acb0925343a683eb4bc33ee67
+      internalID: -9879266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_66
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 826
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac2352e9de97f834ca0d081e99445d82
+      internalID: -794912102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_67
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 826
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bfc3810381582a409140ea171bcf8c6
+      internalID: 805341673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_68
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 826
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11ed598e7289094388eba09f15bcf8a
+      internalID: -2140279479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_69
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 826
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1977a29a39f83a4ab06b75b9c87341d
+      internalID: -1348219785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_70
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 826
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 881969e765f76d047b8683b79bbadadc
+      internalID: 1586875364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_71
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 826
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e9de01472a24f54a99ec3f467ef8a27
+      internalID: -521550450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_72
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 826
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6792a696c060dd644831701380bac47d
+      internalID: 180010366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_73
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 817
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5dc9f932fe05b54cb0932c6dc877172
+      internalID: 1676694527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_74
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 817
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d967a610a7d90243a821a6d07492bbf
+      internalID: -750044264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_75
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 817
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac986d8cf876fd94d87ffae8e0c7b798
+      internalID: -1516494822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_76
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 817
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a4af2a855dc4f4780e738d1e3ae65c
+      internalID: -1634795814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_77
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 817
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8679d32a18fbaf4ba8589c29203f8fa
+      internalID: 1964140546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_78
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 817
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66379b839d8b4b140b7d067386a9ce3a
+      internalID: -489075049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_79
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 817
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76d700a415e67344818f985b9c2b6cc
+      internalID: -573344403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_80
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 817
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8765acbe33f5ec42a579c928c63b9a4
+      internalID: -1027882512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_81
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 817
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb48a3fa56f443c4ebb504b82ea8c658
+      internalID: 1345870978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_82
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 817
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4510b6b36f075824194051e006258a3b
+      internalID: -1752120001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_83
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 817
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c3040223a7b5434dadcc36a163afaf6
+      internalID: 1748892405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_84
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 817
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 893387635c6e56e4d8f65575ac0a93a9
+      internalID: -1768303474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_85
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 817
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f0a11cc29c95f4da7fdf7fab6cd2a8
+      internalID: -1441607818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_86
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 817
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc5a85e46aa27949bc873a4e1ddc70d
+      internalID: -1831789564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_87
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 817
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f4bc68ece0704341ab37a34e1c88cc2
+      internalID: -288306401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_88
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 817
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa7eff2f11fe8774bb3c4984c02a9783
+      internalID: -752059599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_89
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 784
+        width: 88
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b94b65b36f4bf674ebf5cb578d8987c5
+      internalID: 1001273079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_90
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 784
+        width: 88
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f775b7321a17c40ab2ec75b83c53f2
+      internalID: 429585890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_91
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 808
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6b4884e574783241b6cbafe6bc990ed
+      internalID: -538233835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_92
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 800
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f0497b40706014eb20db4ec631e62d
+      internalID: 380788801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_93
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 793
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1bd774e21f3984581da9d4aa443d7c
+      internalID: 357444070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_94
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 808
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b84db19ab88d5449069bc67ab88b58
+      internalID: 362121490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_95
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 800
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1da5dcfb63abee459d639969b7875cd
+      internalID: -1844670268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_96
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 807
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c6c228c65e59a0438a6699837dba5c0
+      internalID: 1143532768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_97
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 807
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4016b1cb6cabd84898522cbce8cdc42
+      internalID: -1552041936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_98
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 781
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 655f24c1b0a3d364891bd9a0cf841ffd
+      internalID: -1720135735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_99
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 781
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 263b46416d33eef43b6964088924746b
+      internalID: -511553957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_100
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 781
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1833e9bb04479634fbae500aec766e1e
+      internalID: 1872838672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_101
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 781
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d9409726cc1f4f4bbc7b48cf1f2f981
+      internalID: 1121903678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_102
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 781
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 670c4aeadf951004f855c15ecc8aa3b9
+      internalID: -810164028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_103
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 781
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b850a4b4b784b9f4aaf626aa56a02754
+      internalID: 347531795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_104
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 781
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 295a4c815a9d4ae4387133176aa098be
+      internalID: 80113702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_105
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 781
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f35bfaa2e56fbd2469d73c3e83fa3434
+      internalID: -1669383893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_106
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 781
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b2a2b2e48bc2db47be1d6c118a6b958
+      internalID: -59764736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_107
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 781
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1880b38ea3e2b2348a205007b0f116e7
+      internalID: 1122826764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_108
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 781
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96cda9ca93bf51b478b5116f15e856c7
+      internalID: -538201618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_109
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 781
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0da004104e24a62489cb894a36f50f2b
+      internalID: -117373393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_110
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 781
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5577103dc3305034490e46f7a7a81304
+      internalID: -633090429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_111
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 781
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 782f39ea56a495c45a8a45cbb70c302e
+      internalID: 1369726044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_112
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 784
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80e7d46eb2a4e0419a4ff3a2bf58dce
+      internalID: -1301510499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_113
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 784
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b04b3d29cfe41e24ea20c95ab6d3c27e
+      internalID: -1364602418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_114
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 784
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52929daf855a8cf4c85a564c0fa248d3
+      internalID: -1470183003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_115
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 785
+        width: 5
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c572462378996474bbfb111f79586e38
+      internalID: 272788883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_116
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 785
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 923034621c548a346a4d557fe5915d89
+      internalID: -928723420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_117
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 784
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f615a2b11756c22419973dc5b217e342
+      internalID: -33912108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_118
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 784
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffbc3d7e97f3cd34eb1729d430519e17
+      internalID: 903724815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_119
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 784
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc4cc78469ec7e4a8540975bdd90f92
+      internalID: 392716235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_120
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 784
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33bcd88c141b6274fa4af972175ed515
+      internalID: -735529780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_121
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 785
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c140ca480519b3d49ba4eea9f417e1c8
+      internalID: 451816702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_122
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 785
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08e20196d96d4a2478934de99f956356
+      internalID: -439158881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_123
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 784
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dae2a56e9b658a4aaf830e757a28966
+      internalID: -1973348512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_124
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 773
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8233de166e98c428395e06dd6520ac
+      internalID: 171367346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_125
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 773
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 525d0a8bddda1bc43a7a372b3bb026d4
+      internalID: -1193695664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_126
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 773
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d527b3aa904794c4bb9b7cd9d028300e
+      internalID: 1523940802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_127
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 773
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c27a8cd5b82f84cb95116eb216af79
+      internalID: 1141663196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_128
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 773
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e998bc2b6f3d01d49909f1397361721d
+      internalID: -730813150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_129
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 773
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1adf1ed3769b8c4b8ba0be1c1681fcc
+      internalID: 660504878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_130
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 772
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6fbd391959ff1244b00c74ca46ae7cf
+      internalID: -1565128063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_131
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 773
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf0deb0c04d8b2c4ca88541d69766e6e
+      internalID: 622891205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_132
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 773
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a99c3dc6e8fa249820eff06f391e31
+      internalID: 781243578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_133
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 773
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189f312306b178540bc0fdf6e80af9e4
+      internalID: 1532849515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_134
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 773
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56609dc8b80606940a36a8359e53d8cf
+      internalID: 1475173491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_135
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 773
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9108da9d2121f764d96d9e0823b860d4
+      internalID: 859304780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_136
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 773
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f46cffde3dad1542b6080d076c2ae21
+      internalID: -1063051968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_137
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 773
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c8945cce7095544a0db38e5d3e7399
+      internalID: 1325137375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_138
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 773
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe4b11fdcc0b4d44e886d47158420a94
+      internalID: 1425633996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_139
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 768
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62915a8d443ca0d4296dfe6c3db35f18
+      internalID: -930287453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_140
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 768
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6acd3adaf0cc5f749a9ba1d4fdef5102
+      internalID: 370925355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_141
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 768
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505a59a90034adb4194bd711561ac4af
+      internalID: 19122761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_142
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 769
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4063dd19a03d1f41ac223d6a19bff1a
+      internalID: 361674476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_143
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 769
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef385bea55acfe040803e5c0aed4e850
+      internalID: 2084102977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_144
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 769
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a9fe3b6273fe445b27037d0082115a
+      internalID: 873877576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_145
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 768
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0e65f6428796ba47aaa58bb8a891659
+      internalID: 111914314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_146
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 768
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9cb649fbf4c08842b52e1d813d8ee72
+      internalID: -2078329185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_147
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 768
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4304b1d65521ab46b51c2d73cd5e1be
+      internalID: 1077675613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_148
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 769
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b3be9aed4c51845b2e146b57c51c71
+      internalID: 1036516448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_149
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 769
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 275f47febb69c824a8dbf0fb6d9ac43d
+      internalID: 1450811165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_150
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 769
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa1d2893ab1bb384e8c21f9fdb8e53c6
+      internalID: 102663299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_151
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 489
+        width: 784
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b73657a062bde840a680f831c810177
+      internalID: -461584167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_152
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 241
+        width: 256
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25eed4cddea54a548b40d5a2b6fc048d
+      internalID: 50364972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_153
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 241
+        width: 256
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3de932841a11b4f83bab3ed07670b8
+      internalID: -1970127790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_154
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 248
+        width: 256
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3893c53105f188143a9b30c5427f0edc
+      internalID: 1192300332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_155
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8434c675749185742828f4d33ff9d77d
+      internalID: -820174370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_156
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 0
+        width: 256
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b58454dfae9a4114d904c7c1cb6fadc0
+      internalID: 1323291840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BangDIem_157
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 0
+        width: 260
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3fcbace8f855fd4bb1f50ee3ea91759
+      internalID: 1569543997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BangDIem_101: 1121903678
+      BangDIem_61: 1025536576
+      BangDIem_133: 1532849515
+      BangDIem_124: 171367346
+      BangDIem_84: -1768303474
+      BangDIem_153: -1970127790
+      BangDIem_40: 1925602664
+      BangDIem_131: 622891205
+      BangDIem_47: -1852882584
+      BangDIem_7: -1767423941
+      BangDIem_62: -1903637330
+      BangDIem_39: 1274098092
+      BangDIem_117: -33912108
+      BangDIem_15: -165569341
+      BangDIem_38: 1337107467
+      BangDIem_21: 1265726159
+      BangDIem_94: 362121490
+      BangDIem_70: 1586875364
+      BangDIem_22: -571234713
+      BangDIem_156: 1323291840
+      BangDIem_129: 660504878
+      BangDIem_111: 1369726044
+      BangDIem_95: -1844670268
+      BangDIem_145: 111914314
+      BangDIem_46: -471541313
+      BangDIem_103: 347531795
+      BangDIem_54: -1203798463
+      BangDIem_104: 80113702
+      BangDIem_135: 859304780
+      BangDIem_75: -1516494822
+      BangDIem_10: 497130486
+      BangDIem_151: -461584167
+      BangDIem_16: -12733585
+      BangDIem_8: 1582704554
+      BangDIem_121: 451816702
+      BangDIem_92: 380788801
+      BangDIem_89: 1001273079
+      BangDIem_106: -59764736
+      BangDIem_146: -2078329185
+      BangDIem_149: 1450811165
+      BangDIem_17: -1725215474
+      BangDIem_105: -1669383893
+      BangDIem_102: -810164028
+      BangDIem_128: -730813150
+      BangDIem_19: -1621891452
+      BangDIem_30: 441790726
+      BangDIem_76: -1634795814
+      BangDIem_71: -521550450
+      BangDIem_97: -1552041936
+      BangDIem_86: -1831789564
+      BangDIem_112: -1301510499
+      BangDIem_69: -1348219785
+      BangDIem_110: -633090429
+      BangDIem_132: 781243578
+      BangDIem_1: -1841724399
+      BangDIem_77: 1964140546
+      BangDIem_6: -957878051
+      BangDIem_123: -1973348512
+      BangDIem_68: -2140279479
+      BangDIem_152: 50364972
+      BangDIem_114: -1470183003
+      BangDIem_12: 2005158207
+      BangDIem_141: 19122761
+      BangDIem_87: -288306401
+      BangDIem_9: 519511905
+      BangDIem_67: 805341673
+      BangDIem_134: 1475173491
+      BangDIem_142: 361674476
+      BangDIem_143: 2084102977
+      BangDIem_28: -1313222834
+      BangDIem_43: -3851683
+      BangDIem_150: 102663299
+      BangDIem_127: 1141663196
+      BangDIem_137: 1325137375
+      BangDIem_33: -1272898352
+      BangDIem_80: -1027882512
+      BangDIem_14: 158535362
+      BangDIem_78: -489075049
+      BangDIem_88: -752059599
+      BangDIem_24: 545113171
+      BangDIem_5: -629909160
+      BangDIem_73: 1676694527
+      BangDIem_44: 1529745043
+      BangDIem_51: 655621137
+      BangDIem_34: 101123423
+      BangDIem_93: 357444070
+      BangDIem_113: -1364602418
+      BangDIem_140: 370925355
+      BangDIem_36: 1186914569
+      BangDIem_25: -562327829
+      BangDIem_20: -879605997
+      BangDIem_27: -1351955769
+      BangDIem_96: 1143532768
+      BangDIem_26: 1939994758
+      BangDIem_116: -928723420
+      BangDIem_37: 1311114215
+      BangDIem_42: 612281686
+      BangDIem_72: 180010366
+      BangDIem_32: 478196326
+      BangDIem_125: -1193695664
+      BangDIem_81: 1345870978
+      BangDIem_66: -794912102
+      BangDIem_49: -1922004480
+      BangDIem_118: 903724815
+      BangDIem_23: 915181770
+      BangDIem_138: 1425633996
+      BangDIem_99: -511553957
+      BangDIem_122: -439158881
+      BangDIem_58: 1545971798
+      BangDIem_154: 1192300332
+      BangDIem_29: -22678256
+      BangDIem_100: 1872838672
+      BangDIem_109: -117373393
+      BangDIem_82: -1752120001
+      BangDIem_155: -820174370
+      BangDIem_59: -284936373
+      BangDIem_98: -1720135735
+      BangDIem_31: -1334273049
+      BangDIem_13: -2103970543
+      BangDIem_136: -1063051968
+      BangDIem_90: 429585890
+      BangDIem_55: 1642846435
+      BangDIem_0: -62300609
+      BangDIem_11: -1191131943
+      BangDIem_63: -2105225566
+      BangDIem_57: 1936864123
+      BangDIem_48: 589453394
+      BangDIem_3: -68931721
+      BangDIem_41: 2001313006
+      BangDIem_53: 947840690
+      BangDIem_45: 379795938
+      BangDIem_65: -9879266
+      BangDIem_157: 1569543997
+      BangDIem_148: 1036516448
+      BangDIem_18: 1660255305
+      BangDIem_64: -793660263
+      BangDIem_4: -2109731162
+      BangDIem_147: 1077675613
+      BangDIem_139: -930287453
+      BangDIem_115: 272788883
+      BangDIem_119: 392716235
+      BangDIem_83: 1748892405
+      BangDIem_144: 873877576
+      BangDIem_120: -735529780
+      BangDIem_50: -811635123
+      BangDIem_60: -1342216430
+      BangDIem_107: 1122826764
+      BangDIem_74: -750044264
+      BangDIem_126: 1523940802
+      BangDIem_79: -573344403
+      BangDIem_35: 2128812726
+      BangDIem_2: 584129666
+      BangDIem_108: -538201618
+      BangDIem_130: -1565128063
+      BangDIem_52: -727210136
+      BangDIem_85: -1441607818
+      BangDIem_91: -538233835
+      BangDIem_56: 542273891
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

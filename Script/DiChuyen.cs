@@ -29,6 +29,14 @@ public class DiChuyen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+
+
+
+
+    }
+    private void FixedUpdate()
+    {
         animator.SetBool("isDangDungTrenSan", isDangDungTrenSan);
         animator.SetFloat("vanToc", vanToc);
         if (Input.GetKey(KeyCode.RightArrow))
@@ -69,27 +77,19 @@ public class DiChuyen : MonoBehaviour
             vanToc = 0;
 
         }
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             PlaySounds("Sounds/Jump");
-            if(isDangDungTrenSan)
+            if (isDangDungTrenSan)
             {
                 rigidbody2D.AddForce(new Vector2(0, 400));
                 isDangDungTrenSan = false;
             }
-            
 
-           
-            
+
+
+
         }
-
-
-
-
-    }
-    private void FixedUpdate()
-    {
-        
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -106,6 +106,7 @@ public class DiChuyen : MonoBehaviour
         {
             animator.SetBool("chetTrongLong", true);
             PlaySounds("Sounds/Die");
+            ((CayNam)(collision.transform.parent.gameObject.GetComponent<CayNam>())).speed = 0;
             rigidbody2D.AddForce(new Vector2(0, 200));
             gameObject.GetComponent<BoxCollider2D>().isTrigger= true;
         }
@@ -120,9 +121,10 @@ public class DiChuyen : MonoBehaviour
     }
     private IEnumerator CayNamChetNhungTinhYeuAnhDanhChoEmVanConDo(Animator enemy)
     {
-        
         yield return new WaitForSeconds(0.3f);
         Destroy(enemy.gameObject);
+        
+
     }
 
     public void PlaySounds(string name)
