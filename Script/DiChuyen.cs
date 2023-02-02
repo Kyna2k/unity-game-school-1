@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
+using UnityEngine.UI;
 
 public class DiChuyen : MonoBehaviour
 {
@@ -14,7 +16,11 @@ public class DiChuyen : MonoBehaviour
     private AudioSource audioSource;
     private bool MarioIsLive = true;
 
-    private ContactPoint[] contacts;
+    private int time_g, coin_g, score_g; 
+
+    public Text coin;
+    public Text score;
+    public Text time;
     //public AudioClip souce_Nam;
     // Start is called before the first frame update
     void Start()
@@ -27,11 +33,31 @@ public class DiChuyen : MonoBehaviour
         isDangDungTrenSan = true;
         speed = 8f;
         audioSource = GetComponent<AudioSource>();
+        coin_g = 0; score_g = 0;time_g = 300;
+
+        time.text = time_g + "";
+        StartCoroutine(time_ne());
+        
+    }
+
+    private IEnumerator time_ne()
+    {
+        while (time_g > 0 && MarioIsLive)
+        {
+            time_g--;
+            time.text = time_g + "";
+            yield return new WaitForSeconds(1);
+        }
+        
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        coin.text = coin_g + "";
+        score.text = score_g + "";
         animator.SetBool("isDangDungTrenSan", isDangDungTrenSan);
         animator.SetFloat("vanToc", vanToc);
         if (Input.GetKey(KeyCode.RightArrow))
@@ -88,7 +114,7 @@ public class DiChuyen : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "matdat")
+        if (collision.gameObject.tag == "matdat" || collision.gameObject.tag == "LuckyBox")
         {
             
             isDangDungTrenSan = true;
@@ -103,9 +129,14 @@ public class DiChuyen : MonoBehaviour
             {
                 Animator AnimBox = collision.transform.GetChild(0).gameObject.GetComponent<Animator>();
                 AnimBox.Play("LenXuongCaiHop");
-                
-                Debug.Log(collision.transform.GetChild(0));
-                StartCoroutine(VienGachDaVeChoCuNoiTinhYeuChungTaBatDau(collision));
+                if(collision.transform.GetChild(0).gameObject.active)
+                {
+                    coin_g++;
+                    score_g += 200;
+                    PlaySounds("Sounds/Coin");
+
+                }
+                StartCoroutine(VienGachDaVoChoCuNoiTinhYeuChungTaBatDau(collision));
             }
         }    
     }
@@ -116,7 +147,7 @@ public class DiChuyen : MonoBehaviour
         {
             if (collision.gameObject.tag == "CayNamLeft" || collision.gameObject.tag == "CayNamRight")
             {
-
+                //Dung tu sat nua, lam on
                 //Debug.Log(die.gameObject.transform.GetChild(2).gameObject.tag);   
                 MarioIsLive = false;
                 animator.SetBool("chetTrongLong", true);
@@ -128,7 +159,7 @@ public class DiChuyen : MonoBehaviour
             }
             else if (collision.gameObject.tag == "CayNamTop" )
             {
-
+                score_g += 100;
                 die.gameObject.transform.GetChild(0).gameObject.SetActive(false);
                 die.gameObject.transform.GetChild(1).gameObject.SetActive(false);
                 PlaySounds("Sounds/Kick");
@@ -148,9 +179,10 @@ public class DiChuyen : MonoBehaviour
 
     }
 
-    private IEnumerator VienGachDaVeChoCuNoiTinhYeuChungTaBatDau(Collision2D collision2)
+    private IEnumerator VienGachDaVoChoCuNoiTinhYeuChungTaBatDau(Collision2D collision2)
     {
-        yield return new WaitForSeconds(0.2f);
+        
+        yield return new WaitForSeconds(0.15f);
         collision2.transform.GetChild(0).gameObject.SetActive(false);
         collision2.transform.GetChild(1).gameObject.SetActive(true);
         collision2.transform.GetChild(2).gameObject.SetActive(true);
