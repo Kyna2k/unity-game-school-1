@@ -12,6 +12,9 @@ public class DiChuyen : MonoBehaviour
     private bool isDangDungTrenSan;
     private Animator die;
     private AudioSource audioSource;
+    private bool MarioIsLive = true;
+
+    private ContactPoint[] contacts;
     //public AudioClip souce_Nam;
     // Start is called before the first frame update
     void Start()
@@ -28,14 +31,6 @@ public class DiChuyen : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        
-
-
-
-
-    }
-    private void FixedUpdate()
     {
         animator.SetBool("isDangDungTrenSan", isDangDungTrenSan);
         animator.SetFloat("vanToc", vanToc);
@@ -75,7 +70,6 @@ public class DiChuyen : MonoBehaviour
         else if (Input.GetKeyUp(KeyCode.LeftArrow))
         {
             vanToc = 0;
-
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -85,11 +79,12 @@ public class DiChuyen : MonoBehaviour
                 rigidbody2D.AddForce(new Vector2(0, 400));
                 isDangDungTrenSan = false;
             }
-
-
-
-
         }
+
+    }
+    private void FixedUpdate()
+    {
+        
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -99,25 +94,51 @@ public class DiChuyen : MonoBehaviour
             isDangDungTrenSan = true;
 
         }
+        if(collision.gameObject.tag == "LuckyBox")
+        {
+            Vector3 vitri = collision.GetContact(0).normal;
+            Debug.Log(vitri.y);
+            
+            if(vitri.y < 0)
+            {
+                Animator AnimBox = collision.transform.GetChild(0).gameObject.GetComponent<Animator>();
+                AnimBox.Play("LenXuongCaiHop");
+                
+                Debug.Log(collision.transform.GetChild(0));
+                StartCoroutine(VienGachDaVeChoCuNoiTinhYeuChungTaBatDau(collision));
+            }
+        }    
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "CayNamLeft" || collision.gameObject.tag == "CayNamRight")
+        die = collision.transform.parent.GetComponent<Animator>();
+        if(MarioIsLive)
         {
-            animator.SetBool("chetTrongLong", true);
-            PlaySounds("Sounds/Die");
-            ((CayNam)(collision.transform.parent.gameObject.GetComponent<CayNam>())).speed = 0;
-            rigidbody2D.AddForce(new Vector2(0, 200));
-            gameObject.GetComponent<BoxCollider2D>().isTrigger= true;
-        }
-        if(collision.gameObject.tag == "CayNamTop")
-        {
-            die = collision.transform.parent.GetComponent<Animator>();
-            PlaySounds("Sounds/Kick");
-            die.SetBool("NamIsDie", true);
-            StartCoroutine(CayNamChetNhungTinhYeuAnhDanhChoEmVanConDo(die));
+            if (collision.gameObject.tag == "CayNamLeft" || collision.gameObject.tag == "CayNamRight")
+            {
 
-        }
+                //Debug.Log(die.gameObject.transform.GetChild(2).gameObject.tag);   
+                MarioIsLive = false;
+                animator.SetBool("chetTrongLong", true);
+                PlaySounds("Sounds/Die");
+                ((CayNam)(collision.transform.parent.gameObject.GetComponent<CayNam>())).speed = 0;
+                rigidbody2D.AddForce(new Vector2(0, 200));
+                gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
+
+            }
+            else if (collision.gameObject.tag == "CayNamTop" )
+            {
+
+                die.gameObject.transform.GetChild(0).gameObject.SetActive(false);
+                die.gameObject.transform.GetChild(1).gameObject.SetActive(false);
+                PlaySounds("Sounds/Kick");
+                die.SetBool("NamIsDie", true);
+                die.gameObject.transform.GetChild(3).gameObject.SetActive(true);
+                StartCoroutine(CayNamChetNhungTinhYeuAnhDanhChoEmVanConDo(die));
+
+            }
+        }    
+        
     }
     private IEnumerator CayNamChetNhungTinhYeuAnhDanhChoEmVanConDo(Animator enemy)
     {
@@ -127,6 +148,16 @@ public class DiChuyen : MonoBehaviour
 
     }
 
+    private IEnumerator VienGachDaVeChoCuNoiTinhYeuChungTaBatDau(Collision2D collision2)
+    {
+        yield return new WaitForSeconds(0.2f);
+        collision2.transform.GetChild(0).gameObject.SetActive(false);
+        collision2.transform.GetChild(1).gameObject.SetActive(true);
+        collision2.transform.GetChild(2).gameObject.SetActive(true);
+        
+
+    }
+   
     public void PlaySounds(string name)
     {
         audioSource.PlayOneShot(Resources.Load<AudioClip>(name));
