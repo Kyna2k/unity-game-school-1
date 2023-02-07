@@ -23,6 +23,9 @@ public class DiChuyen : MonoBehaviour
     public Text time;
     //public AudioClip souce_Nam;
     // Start is called before the first frame update
+
+    //VienDan
+    public GameObject FireBall;
     void Start()
     {
         
@@ -105,6 +108,13 @@ public class DiChuyen : MonoBehaviour
                 rigidbody2D.AddForce(new Vector2(0, 400));
                 isDangDungTrenSan = false;
             }
+        }
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            GameObject fb = Instantiate(FireBall);
+            fb.transform.position = new Vector3(
+                transform.position.x + (isRight ? 0.8f : -1),transform.position.y);
+            fb.GetComponent<FireBall>().setSpeed(isRight ? 5f : -5f);
         }
 
     }

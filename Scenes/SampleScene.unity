@@ -9516,6 +9516,7 @@ MonoBehaviour:
   coin: {fileID: 1378648174}
   score: {fileID: 1172477129}
   time: {fileID: 1696687081}
+  FireBall: {fileID: 6476972329108719096, guid: b8fd09bb61b5a2f4fb3894dfc39cebb3, type: 3}
 --- !u!95 &1269143449
 Animator:
   serializedVersion: 5
