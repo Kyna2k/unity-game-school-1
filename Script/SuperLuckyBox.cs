@@ -6,11 +6,9 @@ public class SuperLuckyBox : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject item;
-    public Sprite unlock;
-    private SpriteRenderer renderer;
     void Start()
     {
-        renderer = GetComponent<SpriteRenderer>() ;
+        Debug.Log(gameObject.transform.position.x);
     }
 
     // Update is called once per frame
@@ -25,9 +23,9 @@ public class SuperLuckyBox : MonoBehaviour
         if (contacts[0].normal.y > 0)
         {
             Debug.Log("??:??");
-            renderer.sprite = unlock;
-            //GameObject mini = Instantiate(item);
-            //mini.transform.position = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y);
+
+            GameObject mini = Instantiate(item);
+            mini.GetComponent<Rigidbody2D>().velocity = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y + 2f);
         }
     }
 }
