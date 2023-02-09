@@ -6,11 +6,17 @@ public class FireBall : MonoBehaviour
 {
     private float speed;
     private new Rigidbody2D rigidbody2D;
+    public bool animation = false;
+    private Animator animator;
+    private AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody2D= GetComponent<Rigidbody2D>();
-        
+        audioSource = GetComponent<AudioSource>();
+        PlaySounds("Sounds/Fire Ball");
+        rigidbody2D = GetComponent<Rigidbody2D>();
+        animator= GetComponent<Animator>();
+        Destroy(gameObject,3);
     }
 
     // Update is called once per frame
@@ -29,5 +35,9 @@ public class FireBall : MonoBehaviour
     public void setSpeed(float s)
     {
         speed = s;
+    }
+    public void PlaySounds(string name)
+    {
+        audioSource.PlayOneShot(Resources.Load<AudioClip>(name));
     }
 }

@@ -15,8 +15,8 @@ public class DiChuyen : MonoBehaviour
     private Animator die;
     private AudioSource audioSource;
     private bool MarioIsLive = true;
-
-    private int time_g, coin_g, score_g; 
+    private int time_g, coin_g, score_g;
+    public GameObject bangdiem;
 
     public Text coin;
     public Text score;
@@ -124,7 +124,7 @@ public class DiChuyen : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "matdat" || collision.gameObject.tag == "LuckyBox")
+        if (collision.gameObject.tag == "matdat" || collision.gameObject.tag == "LuckyBox" || collision.gameObject.tag == "VienGach")
         {
             
             isDangDungTrenSan = true;
@@ -174,7 +174,9 @@ public class DiChuyen : MonoBehaviour
                 die.gameObject.transform.GetChild(1).gameObject.SetActive(false);
                 PlaySounds("Sounds/Kick");
                 die.SetBool("NamIsDie", true);
-                die.gameObject.transform.GetChild(3).gameObject.SetActive(true);
+                GameObject scope = Instantiate(bangdiem);
+                scope.transform.position = new Vector3(die.gameObject.transform.position.x, die.gameObject.transform.position.y);
+                Destroy(scope, 0.5f);
                 StartCoroutine(CayNamChetNhungTinhYeuAnhDanhChoEmVanConDo(die));
 
             }

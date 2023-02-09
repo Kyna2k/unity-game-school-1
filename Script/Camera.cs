@@ -9,7 +9,6 @@ public class Camera : MonoBehaviour
     public GameObject Mario;
     void Start()
     {
-       
     }
 
     // Update is called once per frame
@@ -27,11 +26,5 @@ public class Camera : MonoBehaviour
             if(CameraX < left) CameraX= left;
             if(CameraX < right) CameraX= right;
         }
-    }
-    private void FixedUpdate()
-    {
-        
-
-        
     }
 }
