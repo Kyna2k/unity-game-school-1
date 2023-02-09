@@ -59,7 +59,7 @@ public class CayNam : MonoBehaviour
             Destroy(scope,0.5f);
             collision.gameObject.GetComponent<Animator>().SetBool("Kill", true);
             gameObject.transform.localScale = new Vector2(gameObject.transform.localScale.x, scaleLocalY * -1);
-            if (contacts[0].normal.x >= 0)
+            if (contacts[0].normal.x > 0)
             {
                 gameObject.transform.position = new Vector2(gameObject.transform.position.x +0.5f, positionLocalY + 1f);
                 
@@ -75,7 +75,6 @@ public class CayNam : MonoBehaviour
             gameObject.transform.GetChild(0).gameObject.SetActive(false);
             gameObject.transform.GetChild(1).gameObject.SetActive(false);
             PlaySounds("Sounds/Kick");
-            gameObject.transform.GetChild(3).gameObject.SetActive(false);
             StartCoroutine(CayNamChetNhungTinhYeuAnhDanhChoEmVanConDo(gameObject));
 
         }

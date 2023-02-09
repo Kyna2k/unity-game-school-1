@@ -147,22 +147,8 @@ public class DiChuyen : MonoBehaviour
                 }
                 StartCoroutine(VienGachDaVoChoCuNoiTinhYeuChungTaBatDau(collision));
             }
-        }if(collision.gameObject.tag == "LuckyBoxCoQua")
-        {
-            Vector3 vitri = collision.GetContact(0).normal;
-
-            if (vitri.y < 0)
-            {
-                Animator AnimBox = collision.transform.GetChild(0).gameObject.GetComponent<Animator>();
-                AnimBox.Play("LenXuongCaiHop");
-                if (collision.transform.GetChild(0).gameObject.active)
-                {
-                    PlaySounds("Sounds/Coin");
-
-                }
-                StartCoroutine(AnhTaTraoChoEmNhungMonQuaConAnhDayLaSuChanThanh(collision));
-            }
-        }    
+        }
+        
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -215,15 +201,7 @@ public class DiChuyen : MonoBehaviour
         
 
     }
-    private IEnumerator AnhTaTraoChoEmNhungMonQuaConAnhDayLaSuChanThanh(Collision2D collision2)
-    {
-
-        yield return new WaitForSeconds(0.15f);
-        collision2.transform.GetChild(0).gameObject.SetActive(false);
-        collision2.transform.GetChild(1).gameObject.SetActive(true);
-
-
-    }
+   
     public void PlaySounds(string name)
     {
         audioSource.PlayOneShot(Resources.Load<AudioClip>(name));

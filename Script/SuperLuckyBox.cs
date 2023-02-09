@@ -1,14 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
+using static UnityEditor.Progress;
 
 public class SuperLuckyBox : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public GameObject item;
+    public float speed;
+    public float height;
+
+    private Vector2 originPosition;//vi tri ban dau
+
+    public Sprite EmtyBlock;
+
+    private bool canChange; // khoi bi va cham hay ch
+
+    public GameObject item_ne;
     void Start()
     {
-        Debug.Log(gameObject.transform.position.x);
+        originPosition = transform.position;
+        canChange = true;
     }
 
     // Update is called once per frame
@@ -18,14 +29,78 @@ public class SuperLuckyBox : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        ContactPoint2D[] contacts = new ContactPoint2D[2];
-        collision.GetContacts(contacts);
-        if (contacts[0].normal.y > 0)
+        if (!canChange) return;
+        if (collision.gameObject.tag == "Mario")
         {
-            Debug.Log("??:??");
+            Debug.Log("hello");
+            var direction = collision.GetContact(0).normal;
+            if (direction.y == 1)
+            {
+                //khoa khoi
+                canChange = false;
+                //chuyen sang khoi khac
+                GetComponent<SpriteRenderer>().sprite = EmtyBlock;
+                GetComponent<Animator>().enabled = false;
+                //nay len roi xuong
+                StartCoroutine(GoUpAndDown());
+                //tao vat pham nay len
+                GameObject item;
+                item = Instantiate<GameObject>(item_ne);
 
-            GameObject mini = Instantiate(item);
-            mini.GetComponent<Rigidbody2D>().velocity = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y + 2f);
+                item.transform.position = originPosition;
+                StartCoroutine(ItemGoUp(item));
+            }
+
+
+
+        }
+    }
+    IEnumerator ItemGoUp(GameObject item)
+    {
+        while (true)
+        {
+            item.transform.position = new Vector3(
+                item.transform.position.x,
+                item.transform.position.y + speed * Time.deltaTime
+                );
+            if (item.transform.position.y > originPosition.y + height)
+            {
+
+                break;
+            }
+            yield return null;
+        }
+    }
+
+    IEnumerator GoUpAndDown()
+    {
+        //nay len
+        while (true)
+        {
+            transform.position = new Vector3(
+                transform.position.x,
+                transform.position.y + speed * Time.deltaTime
+                );
+            if (transform.position.y > originPosition.y + height)
+            {
+
+                break;
+            }
+            yield return null;
+        }
+
+        while (true)
+        {
+            transform.position = new Vector3(
+                transform.position.x,
+                transform.position.y - speed * Time.deltaTime
+                );
+            if (transform.position.y < originPosition.y)
+            {
+                transform.position = originPosition;
+                break;
+            }
+            yield return null;
         }
     }
 }
