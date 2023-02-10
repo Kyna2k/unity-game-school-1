@@ -14,8 +14,9 @@ public class SuperLuckyBox : MonoBehaviour
     public Sprite EmtyBlock;
 
     private bool canChange; // khoi bi va cham hay ch
-
-    public GameObject item_ne;
+    private  GameObject item;
+    public GameObject item_nam;
+    public GameObject item_hoa;
     void Start()
     {
         originPosition = transform.position;
@@ -34,7 +35,7 @@ public class SuperLuckyBox : MonoBehaviour
         {
             Debug.Log("hello");
             var direction = collision.GetContact(0).normal;
-            if (direction.y == 1)
+            if (direction.y > 0)
             {
                 //khoa khoi
                 canChange = false;
@@ -44,11 +45,19 @@ public class SuperLuckyBox : MonoBehaviour
                 //nay len roi xuong
                 StartCoroutine(GoUpAndDown());
                 //tao vat pham nay len
-                GameObject item;
-                item = Instantiate<GameObject>(item_ne);
-
+                if(!collision.gameObject.GetComponent<DiChuyen>().bienLon)
+                {
+                    item = Instantiate<GameObject>(item_nam);
+                    
+                }
+                else
+                {
+                    item = Instantiate<GameObject>(item_hoa);
+                        
+                }
                 item.transform.position = originPosition;
                 StartCoroutine(ItemGoUp(item));
+
             }
 
 
@@ -63,7 +72,7 @@ public class SuperLuckyBox : MonoBehaviour
                 item.transform.position.x,
                 item.transform.position.y + speed * Time.deltaTime
                 );
-            if (item.transform.position.y > originPosition.y + height)
+            if (item.transform.position.y > originPosition.y + height )
             {
 
                 break;
@@ -88,7 +97,6 @@ public class SuperLuckyBox : MonoBehaviour
             }
             yield return null;
         }
-
         while (true)
         {
             transform.position = new Vector3(

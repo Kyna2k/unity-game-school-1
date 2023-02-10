@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9189014422731882583}
   - component: {fileID: 9189014422731882580}
   - component: {fileID: 9189014422731882581}
+  - component: {fileID: 1414373283485730733}
   m_Layer: 0
   m_Name: mario_chet_5
   m_TagString: ThuocTangTruong
@@ -133,3 +134,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1414373283485730733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9189014422731882922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed5c9d21c7d65e4dbe9c569fa97a74e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: -17.06
+  right: 1.02
+  speed: 2
+  isRight: 1

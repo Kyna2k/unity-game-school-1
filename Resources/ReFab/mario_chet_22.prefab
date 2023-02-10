@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2280502676436054117
+--- !u!1 &8075923381532280201
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6720818100723253405}
-  - component: {fileID: 8466006551576167816}
-  - component: {fileID: 6935884146537428383}
-  - component: {fileID: 1499445846}
-  - component: {fileID: 1499445847}
+  - component: {fileID: 8075923381532280202}
+  - component: {fileID: 8075923381532280203}
+  - component: {fileID: 8075923381532280200}
+  - component: {fileID: 7205518076746471436}
+  - component: {fileID: -3273197416670092468}
   m_Layer: 0
-  m_Name: LuckyBoX 1
-  m_TagString: LuckyBoxCoQua
+  m_Name: mario_chet_22
+  m_TagString: HoaCo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6720818100723253405
+--- !u!4 &8075923381532280202
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2280502676436054117}
+  m_GameObject: {fileID: 8075923381532280201}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.167038, y: -1.39, z: 0.4855665}
-  m_LocalScale: {x: 4.82393, y: 4.4298697, z: 4.4298697}
+  m_LocalPosition: {x: -12.42, y: -3.4, z: 0}
+  m_LocalScale: {x: 4.235855, y: 4.235855, z: 4.235855}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &8466006551576167816
+--- !u!212 &8075923381532280203
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2280502676436054117}
+  m_GameObject: {fileID: 8075923381532280201}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: -2025525999, guid: 64019db20635a284393d8cc8d5584a2b, type: 3}
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -46478963, guid: 64019db20635a284393d8cc8d5584a2b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -87,17 +87,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &6935884146537428383
+--- !u!95 &8075923381532280200
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2280502676436054117}
+  m_GameObject: {fileID: 8075923381532280201}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c9b8729ade672ff468213905ced376f4, type: 2}
+  m_Controller: {fileID: 9100000, guid: bb2f05e10beb66048965c6b6b234ebfa, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -107,13 +107,13 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!61 &1499445846
+--- !u!61 &7205518076746471436
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2280502676436054117}
+  m_GameObject: {fileID: 8075923381532280201}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -133,20 +133,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.16}
   m_EdgeRadius: 0
---- !u!114 &1499445847
-MonoBehaviour:
+--- !u!50 &-3273197416670092468
+Rigidbody2D:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2280502676436054117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 345c5414c110b5248b2809ebad235291, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 6
-  height: 0.3
-  EmtyBlock: {fileID: 881677711, guid: 64019db20635a284393d8cc8d5584a2b, type: 3}
-  item_nam: {fileID: 9189014422731882922, guid: 3f70f1438c1082d4f9d904b37fcdd068, type: 3}
-  item_hoa: {fileID: 8075923381532280201, guid: 7487cfdff8d930246b225e274beb4686, type: 3}
+  m_GameObject: {fileID: 8075923381532280201}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

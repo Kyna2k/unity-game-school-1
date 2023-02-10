@@ -17,7 +17,8 @@ public class DiChuyen : MonoBehaviour
     private bool MarioIsLive = true;
     private int time_g, coin_g, score_g;
     public GameObject bangdiem;
-
+    public bool bienLon;
+    public bool coSung;
     public Text coin;
     public Text score;
     public Text time;
@@ -28,9 +29,10 @@ public class DiChuyen : MonoBehaviour
     public GameObject FireBall;
     void Start()
     {
-        
+        bienLon = false;
         isRight = true;
-        rigidbody2D= GetComponent<Rigidbody2D>();
+        coSung = false;
+        rigidbody2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         vanToc = 0;
         isDangDungTrenSan = true;
@@ -109,7 +111,7 @@ public class DiChuyen : MonoBehaviour
                 isDangDungTrenSan = false;
             }
         }
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetKeyDown(KeyCode.X) && coSung)
         {
             GameObject fb = Instantiate(FireBall);
             fb.transform.position = new Vector3(
@@ -143,12 +145,36 @@ public class DiChuyen : MonoBehaviour
                     coin_g++;
                     score_g += 200;
                     PlaySounds("Sounds/Coin");
+                    StartCoroutine(VienGachDaVoChoCuNoiTinhYeuChungTaBatDau(collision));
 
                 }
-                StartCoroutine(VienGachDaVoChoCuNoiTinhYeuChungTaBatDau(collision));
             }
         }
-        
+        if(collision.gameObject.tag == "ThuocTangTruong")
+        {
+            if(!bienLon)
+            {
+                bienLon = true;
+                animator.SetBool("BienDoi", bienLon);
+                animator.SetBool("bienLon", bienLon);
+            }    
+            
+        }
+        if(collision.gameObject.tag == "HoaCo" && bienLon)
+        {
+            if(!coSung)
+            {
+                coSung = true;
+                animator.SetBool("coSung", coSung);
+            }
+        }
+        if (collision.gameObject.tag == "HoaCo")
+        {
+            coSung = true;
+            Destroy(collision.gameObject);
+
+        }
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
