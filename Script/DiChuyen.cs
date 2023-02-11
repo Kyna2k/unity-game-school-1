@@ -121,16 +121,22 @@ public class DiChuyen : MonoBehaviour
                     transform.position.x + (isRight ? 0.8f : -1), transform.position.y);
                 fb.GetComponent<FireBall>().setSpeed(isRight ? 5f : -5f);
             }
+            
 
         }
 
     }
     private void FixedUpdate()
     {
-        
+
+        if (rigidbody2D.velocity.y < -1 || rigidbody2D.velocity.y > 0)
+        {
+            isDangDungTrenSan = false;
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log(collision.gameObject.name);
         if (collision.gameObject.tag == "matdat"
             || collision.gameObject.tag == "LuckyBox"
             || collision.gameObject.tag == "VienGach"
@@ -185,6 +191,7 @@ public class DiChuyen : MonoBehaviour
         }
 
     }
+  
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
@@ -200,7 +207,8 @@ public class DiChuyen : MonoBehaviour
                         coSung = false;
                         animator.SetBool("BienDoi", bienLon);
                         animator.SetBool("bienLon", bienLon);
-                }
+                        //trangThaiBatTu();
+                    }
                     else
                     {
                         MarioIsLive = false;
@@ -254,5 +262,17 @@ public class DiChuyen : MonoBehaviour
     public void PlaySounds(string name)
     {
         audioSource.PlayOneShot(Resources.Load<AudioClip>(name));
-    }    
+    }
+    private void trangThaiBatTu()
+    {
+        gameObject.GetComponent<Collider2D>().enabled = false;
+        rigidbody2D.gravityScale = 0;
+        StartCoroutine(viEmAnhNguyenLamTatCa());
+    }
+    private IEnumerator viEmAnhNguyenLamTatCa()
+    {
+        yield return new WaitForSeconds(1f);
+        gameObject.GetComponent<Collider2D>().enabled = false;
+        rigidbody2D.gravityScale = 1;
+    }
 }

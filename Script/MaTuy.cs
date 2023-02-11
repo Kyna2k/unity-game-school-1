@@ -68,9 +68,10 @@ public class MaTuy : MonoBehaviour
    
         if(collision.gameObject.CompareTag("CayNam") )
         {
-            //gameObject.GetComponent<Collider2D>().isTrigger = true;
+            gameObject.GetComponent<Collider2D>().isTrigger = true;
 
         }
+        
         if(collision.gameObject.tag == "Mario")
         {
             Destroy(gameObject);
@@ -78,6 +79,23 @@ public class MaTuy : MonoBehaviour
         
             
     }
-    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("matdat"))
+        {
+            gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY;
+        }
+        if (collision.gameObject.tag == "Mario")
+        {
+            if (!collision.gameObject.GetComponent<DiChuyen>().bienLon)
+            {
+                var z = collision.gameObject.GetComponent<DiChuyen>().bienLon = true;
+                collision.gameObject.GetComponent<Animator>().SetBool("BienDoi", z);
+                collision.gameObject.GetComponent<Animator>().SetBool("bienLon", z);
+            }
+            Destroy(gameObject);
+        }
+    }
+
 
 }

@@ -15,6 +15,7 @@ public class FireBall : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         PlaySounds("Sounds/Fire Ball");
         rigidbody2D = GetComponent<Rigidbody2D>();
+        rigidbody2D.velocity = new Vector2(speed, 0);
         animator= GetComponent<Animator>();
         Destroy(gameObject,3);
     }
@@ -22,7 +23,7 @@ public class FireBall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+      
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -30,6 +31,10 @@ public class FireBall : MonoBehaviour
         {
             rigidbody2D.velocity = new Vector2(speed, Mathf.Abs(speed));
             
+        }if(collision.gameObject.tag == "CaiCong" )
+        {
+            gameObject.GetComponent<Animator>().SetBool("Kill", true);
+            Destroy(gameObject,0.1f);
         }
     }
     public void setSpeed(float s)
