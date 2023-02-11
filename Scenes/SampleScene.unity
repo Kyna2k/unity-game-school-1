@@ -358,9 +358,10 @@ GameObject:
   m_Component:
   - component: {fileID: 34043033}
   - component: {fileID: 34043034}
+  - component: {fileID: 34043035}
   m_Layer: 0
   m_Name: mario_chet_67 (7)
-  m_TagString: Untagged
+  m_TagString: BatThang
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -432,6 +433,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &34043035
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34043032}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: -0.15945566, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &43311097
 GameObject:
   m_ObjectHideFlags: 0
@@ -943,7 +970,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8045931144283278265, guid: 786d4923d245cfc4eb4a99b102ea55b2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.936
+      value: -0.931
       objectReference: {fileID: 0}
     - target: {fileID: 8045931144283278265, guid: 786d4923d245cfc4eb4a99b102ea55b2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2155,9 +2182,10 @@ GameObject:
   m_Component:
   - component: {fileID: 272606292}
   - component: {fileID: 272606293}
+  - component: {fileID: 272606294}
   m_Layer: 0
   m_Name: mario_chet_67 (3)
-  m_TagString: Untagged
+  m_TagString: BatThang
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2229,6 +2257,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &272606294
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272606291}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0020872504, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.31400314, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.31445548, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &277271184
 GameObject:
   m_ObjectHideFlags: 0
@@ -2323,9 +2377,10 @@ GameObject:
   m_Component:
   - component: {fileID: 282979683}
   - component: {fileID: 282979684}
+  - component: {fileID: 282979685}
   m_Layer: 0
   m_Name: mario_chet_67 (1)
-  m_TagString: Untagged
+  m_TagString: BatThang
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2397,6 +2452,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &282979685
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282979682}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00000078231096, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: -0.3214866, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.31526208, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &306212504
 GameObject:
   m_ObjectHideFlags: 0
@@ -2407,9 +2488,10 @@ GameObject:
   m_Component:
   - component: {fileID: 306212505}
   - component: {fileID: 306212506}
+  - component: {fileID: 306212507}
   m_Layer: 0
   m_Name: mario_chet_67 (5)
-  m_TagString: Untagged
+  m_TagString: BatThang
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2481,6 +2563,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &306212507
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306212504}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0016486794, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.777244, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.7713969, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &316900751
 GameObject:
   m_ObjectHideFlags: 0
@@ -2527,9 +2635,10 @@ GameObject:
   m_Component:
   - component: {fileID: 367034513}
   - component: {fileID: 367034514}
+  - component: {fileID: 367034515}
   m_Layer: 0
   m_Name: mario_chet_67 (3)
-  m_TagString: Untagged
+  m_TagString: BatThang
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2601,6 +2710,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &367034515
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367034512}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0000018179417, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: -0.47080734, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.46312875, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1001 &374959127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3821,7 +3956,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.53, y: -0.04, z: -10}
+  m_LocalPosition: {x: -8.54, y: -0.04, z: -10}
   m_LocalScale: {x: 0.97272784, y: 0.97272784, z: 0.97272784}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4327,9 +4462,10 @@ GameObject:
   m_Component:
   - component: {fileID: 608841757}
   - component: {fileID: 608841758}
+  - component: {fileID: 608841759}
   m_Layer: 0
   m_Name: mario_chet_18 (1)
-  m_TagString: Untagged
+  m_TagString: CaiCong
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4402,6 +4538,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &608841759
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608841756}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.15313718}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.6262742}
+  m_EdgeRadius: 0
 --- !u!1 &628465080
 GameObject:
   m_ObjectHideFlags: 0
@@ -4607,9 +4769,10 @@ GameObject:
   m_Component:
   - component: {fileID: 642262845}
   - component: {fileID: 642262846}
+  - component: {fileID: 642262847}
   m_Layer: 0
   m_Name: mario_chet_18 (1)
-  m_TagString: Untagged
+  m_TagString: CaiCong
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4681,6 +4844,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &642262847
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642262844}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+  m_EdgeRadius: 0
 --- !u!1001 &648856140
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4792,7 +4981,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2875287419707326115, guid: dea54c33edb22e14c82af82b2bf82195, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.96
+      value: -6.78
       objectReference: {fileID: 0}
     - target: {fileID: 2875287419707326115, guid: dea54c33edb22e14c82af82b2bf82195, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4832,11 +5021,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2875287419707326118, guid: dea54c33edb22e14c82af82b2bf82195, type: 3}
       propertyPath: left
-      value: 9.8
+      value: 9.86
       objectReference: {fileID: 0}
     - target: {fileID: 2875287419707326118, guid: dea54c33edb22e14c82af82b2bf82195, type: 3}
       propertyPath: right
-      value: 13.4
+      value: 13.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2875287419707326118, guid: dea54c33edb22e14c82af82b2bf82195, type: 3}
+      propertyPath: isRight
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dea54c33edb22e14c82af82b2bf82195, type: 3}
@@ -5359,9 +5552,10 @@ GameObject:
   m_Component:
   - component: {fileID: 746226945}
   - component: {fileID: 746226946}
+  - component: {fileID: 746226947}
   m_Layer: 0
   m_Name: mario_chet_67 (2)
-  m_TagString: Untagged
+  m_TagString: BatThang
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5433,6 +5627,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &746226947
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746226944}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: -0.15945566, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &747165808
 GameObject:
   m_ObjectHideFlags: 0
@@ -6080,13 +6300,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 948731749}
     m_Modifications:
+    - target: {fileID: 1423062873041806219, guid: 1354cf47a1059ed4482686f683c8d058, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423062873041806219, guid: 1354cf47a1059ed4482686f683c8d058, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.253
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928112998498657644, guid: 1354cf47a1059ed4482686f683c8d058, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2040331047176190186, guid: 1354cf47a1059ed4482686f683c8d058, type: 3}
       propertyPath: m_RootOrder
       value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2040331047176190186, guid: 1354cf47a1059ed4482686f683c8d058, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.746
+      value: 4.72
       objectReference: {fileID: 0}
     - target: {fileID: 2040331047176190186, guid: 1354cf47a1059ed4482686f683c8d058, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6224,9 +6456,10 @@ GameObject:
   m_Component:
   - component: {fileID: 815324655}
   - component: {fileID: 815324656}
+  - component: {fileID: 815324657}
   m_Layer: 0
   m_Name: mario_chet_67 (8)
-  m_TagString: Untagged
+  m_TagString: BatThang
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6298,6 +6531,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &815324657
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815324654}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00000035762787, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: -0.47080734, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.4689136, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1001 &833082235
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6503,7 +6762,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2875287419707326115, guid: dea54c33edb22e14c82af82b2bf82195, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.6399994
+      value: 0.69
       objectReference: {fileID: 0}
     - target: {fileID: 2875287419707326115, guid: dea54c33edb22e14c82af82b2bf82195, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6543,11 +6802,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2875287419707326118, guid: dea54c33edb22e14c82af82b2bf82195, type: 3}
       propertyPath: left
-      value: 15.69
+      value: 15.75
       objectReference: {fileID: 0}
     - target: {fileID: 2875287419707326118, guid: dea54c33edb22e14c82af82b2bf82195, type: 3}
       propertyPath: right
-      value: 20.66
+      value: 20.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dea54c33edb22e14c82af82b2bf82195, type: 3}
@@ -7433,9 +7692,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1016097434}
   - component: {fileID: 1016097435}
+  - component: {fileID: 1016097436}
   m_Layer: 0
   m_Name: mario_chet_67 (1)
-  m_TagString: Untagged
+  m_TagString: BatThang
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7507,6 +7767,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1016097436
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016097433}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.15875272, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1001 &1041139525
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7977,9 +8263,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1132345960}
   - component: {fileID: 1132345961}
+  - component: {fileID: 1132345962}
   m_Layer: 0
   m_Name: mario_chet_67 (11)
-  m_TagString: Untagged
+  m_TagString: BatThang
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8051,6 +8338,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1132345962
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132345959}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0021108687, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.78171486, y: 0.78197235}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.7726094, y: 0.7820437}
+  m_EdgeRadius: 0
 --- !u!1 &1132993850
 GameObject:
   m_ObjectHideFlags: 0
@@ -8647,9 +8960,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1196814808}
   - component: {fileID: 1196814809}
+  - component: {fileID: 1196814810}
   m_Layer: 0
   m_Name: mario_chet_67 (12)
-  m_TagString: Untagged
+  m_TagString: BatThang
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8721,6 +9035,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1196814810
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196814807}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0021682233, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.47303182, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.47647193, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &1202526647
 GameObject:
   m_ObjectHideFlags: 0
@@ -8932,9 +9272,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1227509004}
   - component: {fileID: 1227509005}
+  - component: {fileID: 1227509006}
   m_Layer: 0
   m_Name: mario_chet_67 (14)
-  m_TagString: Untagged
+  m_TagString: BatThang
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9006,6 +9347,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1227509006
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227509003}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0026830658, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.32006937, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.31565732, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &1229850092
 GameObject:
   m_ObjectHideFlags: 0
@@ -9268,9 +9635,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1258286510}
   - component: {fileID: 1258286511}
+  - component: {fileID: 1258286512}
   m_Layer: 0
   m_Name: mario_chet_18 (1)
-  m_TagString: Untagged
+  m_TagString: CaiCong
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9345,6 +9713,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1258286512
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258286509}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.15696555}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.63393116}
+  m_EdgeRadius: 0
 --- !u!1001 &1267743252
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9861,9 +10255,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1295769810}
   - component: {fileID: 1295769811}
+  - component: {fileID: 1295769812}
   m_Layer: 0
   m_Name: mario_chet_67 (16)
-  m_TagString: Untagged
+  m_TagString: BatThang
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9935,6 +10330,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1295769812
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295769809}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00000027567148, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.46873188, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.46594727, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &1306718741
 GameObject:
   m_ObjectHideFlags: 0
@@ -10284,7 +10705,7 @@ GameObject:
   - component: {fileID: 1355842474}
   m_Layer: 0
   m_Name: mario_chet_18 (1)
-  m_TagString: caicong
+  m_TagString: CaiCong
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10370,7 +10791,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.084225506}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -10381,7 +10802,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 0.32, y: 0.488451}
   m_EdgeRadius: 0
 --- !u!1 &1365262810
 GameObject:
@@ -10393,9 +10814,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1365262811}
   - component: {fileID: 1365262812}
+  - component: {fileID: 1365262813}
   m_Layer: 0
   m_Name: mario_chet_67 (4)
-  m_TagString: Untagged
+  m_TagString: BatThang
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10467,6 +10889,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1365262813
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365262810}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00000059604645, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.6191856, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.61720943, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &1378599079
 GameObject:
   m_ObjectHideFlags: 0
@@ -10479,7 +10927,7 @@ GameObject:
   - component: {fileID: 1378599081}
   m_Layer: 0
   m_Name: mario_chet_103 (3)
-  m_TagString: Untagged
+  m_TagString: BatThang
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10643,9 +11091,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1380633767}
   - component: {fileID: 1380633768}
+  - component: {fileID: 1380633769}
   m_Layer: 0
   m_Name: mario_chet_67 (15)
-  m_TagString: Untagged
+  m_TagString: BatThang
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10717,6 +11166,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1380633769
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380633766}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.15875272, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &1416843039
 GameObject:
   m_ObjectHideFlags: 0
@@ -10895,9 +11370,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1434107586}
   - component: {fileID: 1434107587}
+  - component: {fileID: 1434107588}
   m_Layer: 0
   m_Name: mario_chet_67 (13)
-  m_TagString: Untagged
+  m_TagString: BatThang
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10969,6 +11445,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1434107588
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434107585}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0043349117, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.31400314, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.3073975, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &1437848446
 GameObject:
   m_ObjectHideFlags: 0
@@ -11324,9 +11826,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1479230582}
   - component: {fileID: 1479230583}
+  - component: {fileID: 1479230584}
   m_Layer: 0
   m_Name: mario_chet_67 (9)
-  m_TagString: Untagged
+  m_TagString: BatThang
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11398,6 +11901,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1479230584
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479230581}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.002167344, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: -0.62599057, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.6282803, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &1487369494
 GameObject:
   m_ObjectHideFlags: 0
@@ -11408,9 +11937,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1487369495}
   - component: {fileID: 1487369496}
+  - component: {fileID: 1487369497}
   m_Layer: 0
   m_Name: mario_chet_67 (10)
-  m_TagString: Untagged
+  m_TagString: BatThang
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11482,6 +12012,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1487369497
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487369494}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0021671653, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.6191856, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.61519563, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &1492557791
 GameObject:
   m_ObjectHideFlags: 0
@@ -12194,9 +12750,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1634450956}
   - component: {fileID: 1634450957}
+  - component: {fileID: 1634450958}
   m_Layer: 0
   m_Name: mario_chet_67 (6)
-  m_TagString: Untagged
+  m_TagString: BatThang
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12268,6 +12825,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1634450958
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634450955}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.001043424, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: -0.3214866, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.31654403, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &1662494355
 GameObject:
   m_ObjectHideFlags: 0
@@ -12362,9 +12945,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1667323584}
   - component: {fileID: 1667323585}
+  - component: {fileID: 1667323586}
   m_Layer: 0
   m_Name: mario_chet_67 (4)
-  m_TagString: Untagged
+  m_TagString: BatThang
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12436,6 +13020,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1667323586
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667323583}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0000013411045, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: -0.62599057, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.6257822, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1001 &1676307783
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12676,9 +13286,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1691373686}
   - component: {fileID: 1691373687}
+  - component: {fileID: 1691373688}
   m_Layer: 0
   m_Name: mario_chet_67
-  m_TagString: Untagged
+  m_TagString: BatThang
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12750,6 +13361,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1691373688
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691373685}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.002983518, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.32006937, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.31777614, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &1696687079
 GameObject:
   m_ObjectHideFlags: 0
@@ -13063,9 +13700,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1746239189}
   - component: {fileID: 1746239190}
+  - component: {fileID: 1746239191}
   m_Layer: 0
   m_Name: mario_chet_67
-  m_TagString: Untagged
+  m_TagString: BatThang
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13137,6 +13775,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1746239191
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746239188}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00073340535, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.46873188, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.46675742, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &1798037711
 GameObject:
   m_ObjectHideFlags: 0
@@ -13231,9 +13895,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1799286346}
   - component: {fileID: 1799286347}
+  - component: {fileID: 1799286348}
   m_Layer: 0
   m_Name: mario_chet_67 (17)
-  m_TagString: Untagged
+  m_TagString: BatThang
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13305,6 +13970,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1799286348
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799286345}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.075145334, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.623231, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.47131348, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &1818113987
 GameObject:
   m_ObjectHideFlags: 0
@@ -13735,9 +14426,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1844117386}
   - component: {fileID: 1844117387}
+  - component: {fileID: 1844117388}
   m_Layer: 0
   m_Name: mario_chet_18
-  m_TagString: Untagged
+  m_TagString: CaiCong
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13809,6 +14501,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1844117388
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844117385}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+  m_EdgeRadius: 0
 --- !u!1 &1878453707
 GameObject:
   m_ObjectHideFlags: 0
@@ -13819,9 +14537,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1878453708}
   - component: {fileID: 1878453709}
+  - component: {fileID: 1878453710}
   m_Layer: 0
   m_Name: mario_chet_67 (2)
-  m_TagString: Untagged
+  m_TagString: BatThang
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13893,6 +14612,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1878453710
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878453707}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.000801906, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.47303182, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.46933916, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &1892893321
 GameObject:
   m_ObjectHideFlags: 0
@@ -14301,9 +15046,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1970652890}
   - component: {fileID: 1970652891}
+  - component: {fileID: 1970652892}
   m_Layer: 0
   m_Name: mario_chet_18 (2)
-  m_TagString: Untagged
+  m_TagString: CaiCong
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14375,6 +15121,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1970652892
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970652889}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+  m_EdgeRadius: 0
 --- !u!1001 &1984622738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14436,7 +15208,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2875287419707326118, guid: dea54c33edb22e14c82af82b2bf82195, type: 3}
       propertyPath: right
-      value: 20.04
+      value: 19.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dea54c33edb22e14c82af82b2bf82195, type: 3}
@@ -14474,7 +15246,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8045931144283278265, guid: 786d4923d245cfc4eb4a99b102ea55b2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.327
+      value: -2.32
       objectReference: {fileID: 0}
     - target: {fileID: 8045931144283278265, guid: 786d4923d245cfc4eb4a99b102ea55b2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14944,9 +15716,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2036368745}
   - component: {fileID: 2036368746}
+  - component: {fileID: 2036368747}
   m_Layer: 0
   m_Name: mario_chet_67
-  m_TagString: Untagged
+  m_TagString: BatThang
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15018,6 +15791,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &2036368747
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036368744}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0038156211, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.623231, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.6103024, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &2045051305
 GameObject:
   m_ObjectHideFlags: 0

@@ -65,15 +65,11 @@ public class MaTuy : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision == null)
+   
+        if(collision.gameObject.CompareTag("CayNam") )
         {
-            gameObject.GetComponent<Collider2D>().isTrigger = false;
-            Rigidbody2D.gravityScale = 1;
-        }    
-        if(collision.gameObject.tag == "CayNam")
-        {
-            gameObject.GetComponent<Collider2D>().isTrigger = true;
-            Rigidbody2D.gravityScale = 0 ;
+            //gameObject.GetComponent<Collider2D>().isTrigger = true;
+
         }
         if(collision.gameObject.tag == "Mario")
         {
@@ -82,4 +78,6 @@ public class MaTuy : MonoBehaviour
         
             
     }
+    
+
 }

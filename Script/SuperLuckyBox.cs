@@ -33,7 +33,6 @@ public class SuperLuckyBox : MonoBehaviour
         if (!canChange) return;
         if (collision.gameObject.tag == "Mario")
         {
-            Debug.Log("hello");
             var direction = collision.GetContact(0).normal;
             if (direction.y > 0)
             {

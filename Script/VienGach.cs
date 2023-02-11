@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class VienGach : MonoBehaviour
 {
+
+    public float speed;
+    public float height;
     public GameObject minigach;
-    private float x, y;
+    private Vector2 originPosition;
     // Start is called before the first frame update
     void Start()
     {
-        x = gameObject.transform.position.x;
-        y = gameObject.transform.position.y;
+        originPosition = transform.position;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -24,11 +26,50 @@ public class VienGach : MonoBehaviour
         collision.GetContacts(contacts);
         if (contacts[0].normal.y > 0)
         {
-
-            GameObject mini = Instantiate(minigach);
-            Destroy(gameObject);
-            mini.transform.position = new Vector2(x,y);
+            if(collision.gameObject.tag == "Mario")
+            {
+                if(!collision.gameObject.GetComponent<DiChuyen>().bienLon)
+                {
+                    StartCoroutine(GoUpAndDown());
+                }
+                else
+                {
+                    GameObject mini = Instantiate(minigach);
+                    Destroy(gameObject);
+                    mini.transform.position = originPosition;
+                }    
+            }    
+            
         }    
     }
+    IEnumerator GoUpAndDown()
+    {
+        //nay len
+        while (true)
+        {
+            transform.position = new Vector3(
+                transform.position.x,
+                transform.position.y + speed * Time.deltaTime
+                );
+            if (transform.position.y > originPosition.y + height)
+            {
 
+                break;
+            }
+            yield return null;
+        }
+        while (true)
+        {
+            transform.position = new Vector3(
+                transform.position.x,
+                transform.position.y - speed * Time.deltaTime
+                );
+            if (transform.position.y < originPosition.y)
+            {
+                transform.position = originPosition;
+                break;
+            }
+            yield return null;
+        }
+    }
 }

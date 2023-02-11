@@ -119,6 +119,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6cb7d1246099734a881cc09fc6c8f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 6
+  height: 0.3
   minigach: {fileID: 6431987051394741479, guid: 8725f0a63ca85394588a4047bb58bfae, type: 3}
 --- !u!61 &8045931144283278244
 BoxCollider2D:

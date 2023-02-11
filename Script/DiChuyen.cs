@@ -61,62 +61,67 @@ public class DiChuyen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         coin.text = coin_g + "";
         score.text = score_g + "";
         animator.SetBool("isDangDungTrenSan", isDangDungTrenSan);
         animator.SetFloat("vanToc", vanToc);
-        if (Input.GetKey(KeyCode.RightArrow))
+        if(MarioIsLive)
         {
-            //
-
-            if (!isRight)
+            if (Input.GetKey(KeyCode.RightArrow))
             {
-                Vector2 scale = transform.localScale;
-                scale.x *= scale.x > 0 ? 1 : -1;
-                transform.localScale = scale;
-                isRight = true;
-            }
-            transform.Translate(Time.deltaTime * speed, 0, 0);
-            //rigidbody2D.velocity= new Vector2(speed,0);
-            vanToc = speed;
-        }
-        else if (Input.GetKeyUp(KeyCode.RightArrow))
-        {
-            vanToc = 0;
-        }
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            if (isRight)
-            {
-                Vector2 scale = transform.localScale;
-                scale.x *= scale.x > 0 ? -1 : 1;
-                transform.localScale = scale;
-                isRight = false;
-            }
-            transform.Translate(-Time.deltaTime * speed, 0, 0);
+                //
 
-            vanToc = speed;
-
-        }
-        else if (Input.GetKeyUp(KeyCode.LeftArrow))
-        {
-            vanToc = 0;
-        }
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            PlaySounds("Sounds/Jump");
-            if (isDangDungTrenSan)
-            {
-                rigidbody2D.AddForce(new Vector2(0, 400));
-                isDangDungTrenSan = false;
+                if (!isRight)
+                {
+                    Vector2 scale = transform.localScale;
+                    scale.x *= scale.x > 0 ? 1 : -1;
+                    transform.localScale = scale;
+                    isRight = true;
+                }
+                transform.Translate(Time.deltaTime * speed, 0, 0);
+                vanToc = speed;
             }
-        }
-        if (Input.GetKeyDown(KeyCode.X) && coSung)
-        {
-            GameObject fb = Instantiate(FireBall);
-            fb.transform.position = new Vector3(
-                transform.position.x + (isRight ? 0.8f : -1),transform.position.y);
-            fb.GetComponent<FireBall>().setSpeed(isRight ? 5f : -5f);
+            else if (Input.GetKeyUp(KeyCode.RightArrow))
+            {
+                vanToc = 0;
+            }
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                if (isRight)
+                {
+                    Vector2 scale = transform.localScale;
+                    scale.x *= scale.x > 0 ? -1 : 1;
+                    transform.localScale = scale;
+                    isRight = false;
+                }
+                transform.Translate(-Time.deltaTime * speed, 0, 0);
+
+                vanToc = speed;
+
+            }
+            else if (Input.GetKeyUp(KeyCode.LeftArrow))
+            {
+                vanToc = 0;
+            }
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                if (isDangDungTrenSan)
+                {
+                    PlaySounds("Sounds/Jump");
+
+                    rigidbody2D.AddForce(new Vector2(0, 400));
+                    isDangDungTrenSan = false;
+                }
+            }
+            if (Input.GetKeyDown(KeyCode.X) && coSung)
+            {
+                GameObject fb = Instantiate(FireBall);
+                fb.transform.position = new Vector3(
+                    transform.position.x + (isRight ? 0.8f : -1), transform.position.y);
+                fb.GetComponent<FireBall>().setSpeed(isRight ? 5f : -5f);
+            }
+
         }
 
     }
@@ -126,7 +131,11 @@ public class DiChuyen : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "matdat" || collision.gameObject.tag == "LuckyBox" || collision.gameObject.tag == "VienGach")
+        if (collision.gameObject.tag == "matdat"
+            || collision.gameObject.tag == "LuckyBox"
+            || collision.gameObject.tag == "VienGach"
+            || collision.gameObject.tag == "CaiCong"
+            || collision.gameObject.tag == "BatThang")
         {
             
             isDangDungTrenSan = true;
@@ -145,7 +154,7 @@ public class DiChuyen : MonoBehaviour
                     coin_g++;
                     score_g += 200;
                     PlaySounds("Sounds/Coin");
-                    StartCoroutine(VienGachDaVoChoCuNoiTinhYeuChungTaBatDau(collision));
+                    StartCoroutine(VienGachDaVoChoCuNoiTinhYeuChungTaBatDau(collision.gameObject));
 
                 }
             }
@@ -178,34 +187,48 @@ public class DiChuyen : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        die = collision.transform.parent.GetComponent<Animator>();
-        if(MarioIsLive)
+
+        if (MarioIsLive)
         {
-            if (collision.gameObject.tag == "CayNamLeft" || collision.gameObject.tag == "CayNamRight")
-            {
-                //Dung tu sat nua, lam on
-                //Debug.Log(die.gameObject.transform.GetChild(2).gameObject.tag);   
-                MarioIsLive = false;
-                animator.SetBool("chetTrongLong", true);
-                PlaySounds("Sounds/Die");
-                ((CayNam)(collision.transform.parent.gameObject.GetComponent<CayNam>())).speed = 0;
-                rigidbody2D.AddForce(new Vector2(0, 200));
-                gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
+            
+         
+                if (collision.gameObject.tag == "CayNamLeft" || collision.gameObject.tag == "CayNamRight")
+                {
+                    if (bienLon)
+                    {
+                        bienLon = false;
+                        coSung = false;
+                        animator.SetBool("BienDoi", bienLon);
+                        animator.SetBool("bienLon", bienLon);
+                }
+                    else
+                    {
+                        MarioIsLive = false;
+                        animator.SetBool("chetTrongLong", true);
+                        PlaySounds("Sounds/Die");
+                        ((CayNam)(collision.transform.parent.gameObject.GetComponent<CayNam>())).speed = 0;
+                        rigidbody2D.AddForce(new Vector2(0, 200));
+                        gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
+                    }
+                    
 
-            }
-            else if (collision.gameObject.tag == "CayNamTop" )
-            {
-                score_g += 100;
-                die.gameObject.transform.GetChild(0).gameObject.SetActive(false);
-                die.gameObject.transform.GetChild(1).gameObject.SetActive(false);
-                PlaySounds("Sounds/Kick");
-                die.SetBool("NamIsDie", true);
-                GameObject scope = Instantiate(bangdiem);
-                scope.transform.position = new Vector3(die.gameObject.transform.position.x, die.gameObject.transform.position.y);
-                Destroy(scope, 0.5f);
-                StartCoroutine(CayNamChetNhungTinhYeuAnhDanhChoEmVanConDo(die));
+                }
+                else if (collision.gameObject.tag == "CayNamTop")
+                {
+                    die = collision.transform.parent.GetComponent<Animator>();
 
-            }
+                    score_g += 100;
+                    die.gameObject.transform.GetChild(0).gameObject.SetActive(false);
+                    die.gameObject.transform.GetChild(1).gameObject.SetActive(false);
+                    PlaySounds("Sounds/Kick");
+                    die.SetBool("NamIsDie", true);
+                    GameObject scope = Instantiate(bangdiem);
+                    scope.transform.position = new Vector3(die.gameObject.transform.position.x, die.gameObject.transform.position.y);
+                    Destroy(scope, 0.5f);
+                    StartCoroutine(CayNamChetNhungTinhYeuAnhDanhChoEmVanConDo(die));
+
+                }
+            
         }    
         
     }
@@ -217,13 +240,13 @@ public class DiChuyen : MonoBehaviour
 
     }
 
-    private IEnumerator VienGachDaVoChoCuNoiTinhYeuChungTaBatDau(Collision2D collision2)
+    private IEnumerator VienGachDaVoChoCuNoiTinhYeuChungTaBatDau(GameObject gameObject)
     {
         
         yield return new WaitForSeconds(0.15f);
-        collision2.transform.GetChild(0).gameObject.SetActive(false);
-        collision2.transform.GetChild(1).gameObject.SetActive(true);
-        collision2.transform.GetChild(2).gameObject.SetActive(true);
+        gameObject.transform.GetChild(0).gameObject.SetActive(false);
+        gameObject.transform.GetChild(1).gameObject.SetActive(true);
+        gameObject.transform.GetChild(2).gameObject.SetActive(true);
         
 
     }
