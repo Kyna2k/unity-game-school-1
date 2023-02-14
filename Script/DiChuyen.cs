@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Playables;
+
 public class DiChuyen : MonoBehaviour
 {
     public float speed;
@@ -25,6 +27,8 @@ public class DiChuyen : MonoBehaviour
     public Text time;
     private bool isPause;
     public GameObject menu;
+    public PlayableDirector cutSlongDat;
+    private bool dixuongdat = false;
     //public AudioClip souce_Nam;
     // Start is called before the first frame update
 
@@ -142,6 +146,21 @@ public class DiChuyen : MonoBehaviour
                 Time.timeScale = 1;
             }
         }
+        if (Input.GetKeyDown(KeyCode.DownArrow) && dixuongdat && isDangDungTrenSan)
+        {
+            if (rigidbody2D.velocity.y > 0.1f && rigidbody2D.velocity.y < 0)
+            {
+                dixuongdat = false;
+            }
+            else
+            {
+                Debug.Log("Dixuong");
+                cutSlongDat.Play();
+            }
+           
+
+        }
+        
 
     }
     private void FixedUpdate()
@@ -154,18 +173,26 @@ public class DiChuyen : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        dixuongdat = false;
         Debug.Log(collision.gameObject.name);
         if (collision.gameObject.tag == "matdat"
             || collision.gameObject.tag == "LuckyBox"
             || collision.gameObject.tag == "VienGach"
             || collision.gameObject.tag == "CaiCong"
-            || collision.gameObject.tag == "BatThang")
+            || collision.gameObject.tag == "BatThang"
+            || collision.gameObject.tag == "HangNavi")
         {
             
             isDangDungTrenSan = true;
+              
 
         }
-        if(collision.gameObject.tag == "LuckyBox")
+        if (collision.gameObject.tag == "HangNavi")
+        {
+
+            dixuongdat = true;
+        }
+        if (collision.gameObject.tag == "LuckyBox")
         {
             Vector3 vitri = collision.GetContact(0).normal;
             
@@ -207,6 +234,7 @@ public class DiChuyen : MonoBehaviour
             Destroy(collision.gameObject);
 
         }
+        
 
     }
   

@@ -2,12 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Camera : MonoBehaviour
+public class CameraNe : MonoBehaviour
 {
+    private float[] vitricong = { 88.01f, -10.11f };
     const float vitridot2 = 17.8f;
     const float vitridot3 = 25.3f;
     public GameObject quaidot2;
     public GameObject quaidot3;
+    public GameObject cutSean;
+    private Color blue = new Color(92, 148, 252);
+    private Color black = new Color(0, 0, 0);
     // Start is called before the first frame update
     public float left, right;
     public GameObject Mario;
@@ -27,17 +31,21 @@ public class Camera : MonoBehaviour
         }
         else
         {
-            if(CameraX < left) CameraX= left;
-            if(CameraX < right) CameraX= right;
+            if (CameraX < left) CameraX = left;
+            if (CameraX < right) CameraX = right;
         }
-        Debug.Log(CameraX);
-        if(transform.position.x >= vitridot2)
+        if (transform.position.x >= vitridot2)
         {
             quaidot2.SetActive(true);
         }
-        if(transform.position.x >= vitridot3)
+        if (transform.position.x >= vitridot3)
         {
             quaidot3.SetActive(true);
+        }
+        if (transform.position.y == vitricong[1])
+        {
+            gameObject.GetComponent<Camera>().backgroundColor = black;
+            cutSean.SetActive(false);
         }
     }
 }
