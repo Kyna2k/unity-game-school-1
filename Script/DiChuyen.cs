@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class DiChuyen : MonoBehaviour
 {
     public float speed;
@@ -22,6 +23,8 @@ public class DiChuyen : MonoBehaviour
     public Text coin;
     public Text score;
     public Text time;
+    private bool isPause;
+    public GameObject menu;
     //public AudioClip souce_Nam;
     // Start is called before the first frame update
 
@@ -29,6 +32,7 @@ public class DiChuyen : MonoBehaviour
     public GameObject FireBall;
     void Start()
     {
+        isPause = false;
         bienLon = false;
         isRight = true;
         coSung = false;
@@ -123,6 +127,20 @@ public class DiChuyen : MonoBehaviour
             }
             
 
+        }
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            isPause = !isPause;
+            if(isPause)
+            {
+                menu.active = true;
+                Time.timeScale = 0;
+            }
+            else
+            {
+                menu.active = false;
+                Time.timeScale = 1;
+            }
         }
 
     }
@@ -274,5 +292,17 @@ public class DiChuyen : MonoBehaviour
         yield return new WaitForSeconds(1f);
         gameObject.GetComponent<Collider2D>().enabled = false;
         rigidbody2D.gravityScale = 1;
+    }
+    public void resumgame()
+    {
+        isPause = !isPause;
+        menu.active = false;
+        Time.timeScale = 1;
+    }
+    public void restart()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        
     }
 }

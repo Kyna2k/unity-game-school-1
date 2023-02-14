@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Camera : MonoBehaviour
 {
+    const float vitridot2 = 17.8f;
+    const float vitridot3 = 25.3f;
+    public GameObject quaidot2;
+    public GameObject quaidot3;
     // Start is called before the first frame update
     public float left, right;
     public GameObject Mario;
@@ -25,6 +29,15 @@ public class Camera : MonoBehaviour
         {
             if(CameraX < left) CameraX= left;
             if(CameraX < right) CameraX= right;
+        }
+        Debug.Log(CameraX);
+        if(transform.position.x >= vitridot2)
+        {
+            quaidot2.SetActive(true);
+        }
+        if(transform.position.x >= vitridot3)
+        {
+            quaidot3.SetActive(true);
         }
     }
 }
