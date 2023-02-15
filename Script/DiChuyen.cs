@@ -29,6 +29,8 @@ public class DiChuyen : MonoBehaviour
     public GameObject menu;
     public PlayableDirector cutSlongDat;
     private bool dixuongdat = false;
+    private bool dilen = false;
+    public   PlayableDirector cutSBaylen;
     //public AudioClip souce_Nam;
     // Start is called before the first frame update
 
@@ -106,6 +108,7 @@ public class DiChuyen : MonoBehaviour
                 transform.Translate(-Time.deltaTime * speed, 0, 0);
 
                 vanToc = speed;
+                
 
             }
             else if (Input.GetKeyUp(KeyCode.LeftArrow))
@@ -158,9 +161,26 @@ public class DiChuyen : MonoBehaviour
                 cutSlongDat.Play();
             }
            
-
         }
+        if(Input.GetKeyDown(KeyCode.RightArrow) && dilen && isDangDungTrenSan)
+        {
+            if (rigidbody2D.velocity.y > 0.1f && rigidbody2D.velocity.y < 0)
+            {
+                dilen = false;
+            }
+            else
+            {
+                Debug.Log("Dixuong");
+                cutSBaylen.Play();
+            }
+        }
+       
+
         
+
+
+
+
 
     }
     private void FixedUpdate()
@@ -174,13 +194,15 @@ public class DiChuyen : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         dixuongdat = false;
+        dilen = false;
         Debug.Log(collision.gameObject.name);
         if (collision.gameObject.tag == "matdat"
             || collision.gameObject.tag == "LuckyBox"
             || collision.gameObject.tag == "VienGach"
             || collision.gameObject.tag == "CaiCong"
             || collision.gameObject.tag == "BatThang"
-            || collision.gameObject.tag == "HangNavi")
+            || collision.gameObject.tag == "HangNavi"
+            || collision.gameObject.tag == "CaiCongThanKi")
         {
             
             isDangDungTrenSan = true;
@@ -191,6 +213,15 @@ public class DiChuyen : MonoBehaviour
         {
 
             dixuongdat = true;
+        }
+        if(collision.gameObject.tag == "CaiCongThanKi")
+        {
+            Vector3 vitri = collision.GetContact(0).normal;
+            if(vitri.x < 0)
+            {
+                dilen = true;
+
+            }
         }
         if (collision.gameObject.tag == "LuckyBox")
         {

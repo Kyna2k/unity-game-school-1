@@ -10,7 +10,7 @@ public class CameraNe : MonoBehaviour
     public GameObject quaidot2;
     public GameObject quaidot3;
     public GameObject cutSean;
-    private Color blue = new Color(92, 148, 252);
+    private Color blue = new Color(92/255f, 148/255f, 252 / 255f);
     private Color black = new Color(0, 0, 0);
     // Start is called before the first frame update
     public float left, right;
@@ -46,6 +46,9 @@ public class CameraNe : MonoBehaviour
         {
             gameObject.GetComponent<Camera>().backgroundColor = black;
             cutSean.SetActive(false);
+        }else if (transform.position.y != vitricong[1])
+        {
+            gameObject.GetComponent<Camera>().backgroundColor = blue;
         }
     }
 }
