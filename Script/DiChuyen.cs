@@ -90,7 +90,8 @@ public class DiChuyen : MonoBehaviour
                     isRight = true;
                 }
                 transform.Translate(Time.deltaTime * speed, 0, 0);
-               
+                vanToc = speed;
+
             }
             else if (Input.GetKeyUp(KeyCode.RightArrow))
             {
