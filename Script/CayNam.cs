@@ -13,6 +13,7 @@ public class CayNam : MonoBehaviour
     public bool isRight;
     private AudioSource audioSource;
     public GameObject bangdiem;
+    public bool isDead = false;
 
     // Start is called before the first frame update
     void Start()
@@ -53,7 +54,7 @@ public class CayNam : MonoBehaviour
         collision.GetContacts(contacts);
         if (collision.gameObject.tag == "FireBall")
         {
-            Debug.Log(scaleLocalY);
+            isDead = true;
             GameObject scope = Instantiate(bangdiem);
             scope.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y);
             Destroy(scope,0.5f);

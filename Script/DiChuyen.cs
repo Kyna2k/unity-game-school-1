@@ -30,7 +30,7 @@ public class DiChuyen : MonoBehaviour
     public PlayableDirector cutSlongDat;
     private bool dixuongdat = false;
     private bool dilen = false;
-    public   PlayableDirector cutSBaylen;
+    public   PlayableDirector cutSBaylennho, cutSBaylenlon, cutSBaylenHP;
     //public AudioClip souce_Nam;
     // Start is called before the first frame update
 
@@ -90,7 +90,7 @@ public class DiChuyen : MonoBehaviour
                     isRight = true;
                 }
                 transform.Translate(Time.deltaTime * speed, 0, 0);
-                vanToc = speed;
+               
             }
             else if (Input.GetKeyUp(KeyCode.RightArrow))
             {
@@ -171,7 +171,18 @@ public class DiChuyen : MonoBehaviour
             else
             {
                 Debug.Log("Dixuong");
-                cutSBaylen.Play();
+                if(coSung)
+                {
+                    cutSBaylenHP.Play();
+                }else if(bienLon)
+                {
+                    cutSBaylenlon.Play();
+                }
+                else
+                {
+                    cutSBaylennho.Play();
+
+                }
             }
         }
        
@@ -202,7 +213,8 @@ public class DiChuyen : MonoBehaviour
             || collision.gameObject.tag == "CaiCong"
             || collision.gameObject.tag == "BatThang"
             || collision.gameObject.tag == "HangNavi"
-            || collision.gameObject.tag == "CaiCongThanKi")
+            || collision.gameObject.tag == "CaiCongThanKi"
+            || collision.gameObject.tag == "LuckyBoxCoQua")
         {
             
             isDangDungTrenSan = true;
@@ -276,7 +288,7 @@ public class DiChuyen : MonoBehaviour
         {
             
          
-                if (collision.gameObject.tag == "CayNamLeft" || collision.gameObject.tag == "CayNamRight")
+                if (collision.gameObject.tag == "CayNamLeft" || collision.gameObject.tag == "CayNamRight" && !collision.transform.parent.gameObject.GetComponent<CayNam>().isDead)
                 {
                     if (bienLon)
                     {
@@ -301,7 +313,7 @@ public class DiChuyen : MonoBehaviour
                 else if (collision.gameObject.tag == "CayNamTop")
                 {
                     die = collision.transform.parent.GetComponent<Animator>();
-
+                    collision.transform.parent.GetComponent<CayNam>().isDead = true;
                     score_g += 100;
                     die.gameObject.transform.GetChild(0).gameObject.SetActive(false);
                     die.gameObject.transform.GetChild(1).gameObject.SetActive(false);

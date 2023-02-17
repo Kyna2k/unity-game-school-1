@@ -170,7 +170,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &2875287419707326112
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -214,6 +214,7 @@ MonoBehaviour:
   speed: 2
   isRight: 0
   bangdiem: {fileID: 6347460374114493491, guid: 76e2eb75529ab85459a49925a747a664, type: 3}
+  isDead: 0
 --- !u!95 &2875287419707326119
 Animator:
   serializedVersion: 5

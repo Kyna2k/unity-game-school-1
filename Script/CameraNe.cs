@@ -46,7 +46,7 @@ public class CameraNe : MonoBehaviour
         {
             gameObject.GetComponent<Camera>().backgroundColor = black;
             cutSean.SetActive(false);
-        }else if (transform.position.y != vitricong[1])
+        }else if (transform.position.y > -7.78f)
         {
             gameObject.GetComponent<Camera>().backgroundColor = blue;
         }
