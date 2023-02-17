@@ -81,6 +81,14 @@ public class DiChuyen : MonoBehaviour
         score.text = score_g + "";
         animator.SetBool("isDangDungTrenSan", isDangDungTrenSan);
         animator.SetFloat("vanToc", vanToc);
+        if(battu)
+        {
+            speed = 2f;
+        }
+        else
+        {
+            speed = 8f;
+        }
         if(MarioIsLive)
         {
             if (Input.GetKey(KeyCode.RightArrow))
