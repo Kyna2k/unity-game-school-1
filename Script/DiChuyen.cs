@@ -7,6 +7,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Playables;
 
+
 public class DiChuyen : MonoBehaviour
 {
     public float speed;
@@ -30,6 +31,9 @@ public class DiChuyen : MonoBehaviour
     public PlayableDirector cutSlongDat;
     private bool dixuongdat = false;
     private bool dilen = false;
+    private bool battu = false;
+    private Color color_F;
+    private SpriteRenderer spriteRenderer;
     public   PlayableDirector cutSBaylennho, cutSBaylenlon, cutSBaylenHP;
     //public AudioClip souce_Nam;
     // Start is called before the first frame update
@@ -49,7 +53,8 @@ public class DiChuyen : MonoBehaviour
         speed = 8f;
         audioSource = GetComponent<AudioSource>();
         coin_g = 0; score_g = 0;time_g = 300;
-
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        color_F = spriteRenderer.color ;
         time.text = time_g + "";
         StartCoroutine(time_ne());
         
@@ -122,8 +127,18 @@ public class DiChuyen : MonoBehaviour
                 {
                     PlaySounds("Sounds/Jump");
 
-                    rigidbody2D.AddForce(new Vector2(0, 400));
+                    if (!battu)
+                    {
+
+                        rigidbody2D.AddForce(new Vector2(0, 400));
+                        
+                    }
+                    else
+                    {
+                        rigidbody2D.AddForce(new Vector2(0, 10));
+                    }
                     isDangDungTrenSan = false;
+
                 }
             }
             if (Input.GetKeyDown(KeyCode.X) && coSung)
@@ -258,6 +273,7 @@ public class DiChuyen : MonoBehaviour
         {
             if(!bienLon)
             {
+                PlaySounds("Sounds/Flagpole");
                 bienLon = true;
                 animator.SetBool("BienDoi", bienLon);
                 animator.SetBool("bienLon", bienLon);
@@ -285,58 +301,42 @@ public class DiChuyen : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (MarioIsLive)
+        if (MarioIsLive && !battu)
         {
-            
-         
-                if (collision.gameObject.tag == "CayNamLeft" || collision.gameObject.tag == "CayNamRight" && !collision.transform.parent.gameObject.GetComponent<CayNam>().isDead)
+            if (collision.gameObject.tag == "CayNamLeft" || collision.gameObject.tag == "CayNamRight" && !collision.transform.parent.gameObject.GetComponent<CayNam>().isDead)
+            {
+                if (bienLon)
                 {
-                    if (bienLon)
-                    {
-                        bienLon = false;
-                        coSung = false;
-                        animator.SetBool("BienDoi", bienLon);
-                        animator.SetBool("bienLon", bienLon);
-                        //trangThaiBatTu();
-                    }
-                    else
-                    {
-                        MarioIsLive = false;
-                        animator.SetBool("chetTrongLong", true);
-                        PlaySounds("Sounds/Die");
-                        ((CayNam)(collision.transform.parent.gameObject.GetComponent<CayNam>())).speed = 0;
-                        rigidbody2D.AddForce(new Vector2(0, 200));
-                        gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
-                    }
+                    bienLon = false;
+                    coSung = false;
+                    animator.SetBool("BienDoi", bienLon);
+                    animator.SetBool("bienLon", bienLon);
+                    StartCoroutine(SieuNhan());
+                }
+                else
+                {
+                    MarioIsLive = false;
+                    animator.SetBool("chetTrongLong", true);
+                    PlaySounds("Sounds/Die");
+                    ((CayNam)(collision.transform.parent.gameObject.GetComponent<CayNam>())).speed = 0;
+                    rigidbody2D.AddForce(new Vector2(0, 200));
+                    gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
+                }
                     
 
-                }
-                else if (collision.gameObject.tag == "CayNamTop")
-                {
-                    die = collision.transform.parent.GetComponent<Animator>();
-                    collision.transform.parent.GetComponent<CayNam>().isDead = true;
-                    score_g += 100;
-                    die.gameObject.transform.GetChild(0).gameObject.SetActive(false);
-                    die.gameObject.transform.GetChild(1).gameObject.SetActive(false);
-                    PlaySounds("Sounds/Kick");
-                    die.SetBool("NamIsDie", true);
-                    GameObject scope = Instantiate(bangdiem);
-                    scope.transform.position = new Vector3(die.gameObject.transform.position.x, die.gameObject.transform.position.y);
-                    Destroy(scope, 0.5f);
-                    StartCoroutine(CayNamChetNhungTinhYeuAnhDanhChoEmVanConDo(die));
-
-                }
+            }
+            if (collision.gameObject.tag == "DongTienNgoaiBox")
+            {
+                coin_g++;
+                score_g += 200;
+                PlaySounds("Sounds/Coin");
+                Destroy(collision.gameObject);
+            }
             
         }    
         
     }
-    private IEnumerator CayNamChetNhungTinhYeuAnhDanhChoEmVanConDo(Animator enemy)
-    {
-        yield return new WaitForSeconds(0.3f);
-        Destroy(enemy.gameObject);
-        
 
-    }
 
     private IEnumerator VienGachDaVoChoCuNoiTinhYeuChungTaBatDau(GameObject gameObject)
     {
@@ -353,17 +353,26 @@ public class DiChuyen : MonoBehaviour
     {
         audioSource.PlayOneShot(Resources.Load<AudioClip>(name));
     }
-    private void trangThaiBatTu()
+
+    //Hoi anti unity
+    public IEnumerator SieuNhan()
     {
-        gameObject.GetComponent<Collider2D>().enabled = false;
-        rigidbody2D.gravityScale = 0;
-        StartCoroutine(viEmAnhNguyenLamTatCa());
-    }
-    private IEnumerator viEmAnhNguyenLamTatCa()
-    {
-        yield return new WaitForSeconds(1f);
-        gameObject.GetComponent<Collider2D>().enabled = false;
-        rigidbody2D.gravityScale = 1;
+        battu = true;
+        color_F.a = 0.5f;
+        spriteRenderer.color = color_F;
+
+        gameObject.GetComponent<BoxCollider2D>().enabled = false;
+        rigidbody2D.gravityScale = 0f;
+        transform.Translate(0, -0.3f, 0);
+        yield return new WaitForSeconds(3f);
+
+        color_F.a = 1f;
+        spriteRenderer.color = color_F;
+        transform.Translate(0, 0, 0);
+        rigidbody2D.gravityScale = 1f;
+        gameObject.GetComponent<BoxCollider2D>().enabled = true;
+        battu = false;
+
     }
     public void resumgame()
     {

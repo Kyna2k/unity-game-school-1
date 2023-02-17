@@ -12,15 +12,17 @@ public class SuperLuckyBox : MonoBehaviour
     private Vector2 originPosition;//vi tri ban dau
 
     public Sprite EmtyBlock;
-
+    private AudioSource audioSource;
     private bool canChange; // khoi bi va cham hay ch
     private  GameObject item;
     public GameObject item_nam;
     public GameObject item_hoa;
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         originPosition = transform.position;
         canChange = true;
+        
     }
 
     // Update is called once per frame
@@ -36,6 +38,7 @@ public class SuperLuckyBox : MonoBehaviour
             var direction = collision.GetContact(0).normal;
             if (direction.y > 0)
             {
+                PlaySounds("Sounds/Item");
                 //khoa khoi
                 canChange = false;
                 //chuyen sang khoi khac
@@ -62,6 +65,10 @@ public class SuperLuckyBox : MonoBehaviour
 
 
         }
+    }
+    public void PlaySounds(string name)
+    {
+        audioSource.PlayOneShot(Resources.Load<AudioClip>(name));
     }
     IEnumerator ItemGoUp(GameObject item)
     {
