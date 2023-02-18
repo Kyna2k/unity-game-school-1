@@ -34,7 +34,8 @@ public class DiChuyen : MonoBehaviour
     private bool battu = false;
     private Color color_F;
     private SpriteRenderer spriteRenderer;
-    public   PlayableDirector cutSBaylennho, cutSBaylenlon, cutSBaylenHP;
+    public   PlayableDirector cutSBaylennho, cutSBaylenlon, cutSBaylenHP,ending;
+
     //public AudioClip souce_Nam;
     // Start is called before the first frame update
 
@@ -230,7 +231,6 @@ public class DiChuyen : MonoBehaviour
     {
         dixuongdat = false;
         dilen = false;
-        Debug.Log(collision.gameObject.name);
         if (collision.gameObject.tag == "matdat"
             || collision.gameObject.tag == "LuckyBox"
             || collision.gameObject.tag == "VienGach"
@@ -304,6 +304,7 @@ public class DiChuyen : MonoBehaviour
         }
         
 
+
     }
   
     private void OnTriggerEnter2D(Collider2D collision)
@@ -311,7 +312,7 @@ public class DiChuyen : MonoBehaviour
 
         if (MarioIsLive && !battu)
         {
-            if (collision.gameObject.tag == "CayNamLeft" || collision.gameObject.tag == "CayNamRight" && !collision.transform.parent.gameObject.GetComponent<CayNam>().isDead)
+            if ((collision.gameObject.tag == "CayNamLeft" || collision.gameObject.tag == "CayNamRight" && !collision.transform.parent.gameObject.GetComponent<CayNam>().isDead ) || collision.gameObject.tag == "CapCap" || collision.gameObject.tag == "ConRua")
             {
                 if (bienLon)
                 {
@@ -326,7 +327,14 @@ public class DiChuyen : MonoBehaviour
                     MarioIsLive = false;
                     animator.SetBool("chetTrongLong", true);
                     PlaySounds("Sounds/Die");
-                    ((CayNam)(collision.transform.parent.gameObject.GetComponent<CayNam>())).speed = 0;
+                    try
+                    {
+                        ((CayNam)(collision.transform.parent.gameObject.GetComponent<CayNam>())).speed = 0;
+
+                    }catch
+                    {
+
+                    }
                     rigidbody2D.AddForce(new Vector2(0, 200));
                     gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
                 }
@@ -340,6 +348,11 @@ public class DiChuyen : MonoBehaviour
                 PlaySounds("Sounds/Coin");
                 Destroy(collision.gameObject);
             }
+            if(collision.gameObject.tag == "caycot")
+            {
+                ending.Play();
+                StartCoroutine(quamang("MangBoss"));
+            }    
             
         }    
         
@@ -393,5 +406,10 @@ public class DiChuyen : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         
+    }
+    private IEnumerator quamang(string man)
+    {
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene(man);
     }
 }

@@ -306,13 +306,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mario_chet_9
+      name: LaCo
       rect:
         serializedVersion: 2
         x: 260
-        y: 1038
-        width: 24
-        height: 168
+        y: 1181
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -11603,6 +11603,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: BiTren
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1198
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efda5ee81b11ac84da0144d8a92862be
+      internalID: 896550676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CayCoc
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1055
+        width: 2
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe3712dccd590b4f89e9aaca71d8943
+      internalID: -1596788630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: choCam
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1038
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97fc6e17a36a50149baf636677c8b0aa
+      internalID: -815494827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -11668,6 +11731,7 @@ TextureImporter:
       mario_chet_164: 782872164
       mario_chet_543: -224267687
       mario_chet_477: 1679466196
+      choCam: -815494827
       mario_chet_528: -420302067
       mario_chet_5: -14967296
       mario_chet_546: 1023076352
@@ -11760,6 +11824,7 @@ TextureImporter:
       mario_chet_324: 1284041806
       mario_chet_106: 911560958
       mario_chet_141: -494841671
+      LaCo: -662959026
       mario_chet_441: -153965164
       mario_chet_499: -1134617676
       mario_chet_527: -1335191175
@@ -11811,9 +11876,8 @@ TextureImporter:
       mario_chet_98: -931454697
       mario_chet_261: 1749518040
       mario_chet_289: 128788103
-      mario_chet_9: -662959026
-      mario_chet_211: 297025299
       mario_chet_368: 1331540225
+      mario_chet_211: 297025299
       mario_chet_419: 1736379979
       mario_chet_95: -874339856
       mario_chet_71: -1276402222
@@ -11836,6 +11900,7 @@ TextureImporter:
       mario_chet_114: 122415103
       mario_chet_503: 612457506
       mario_chet_113: 707126102
+      CayCoc: -1596788630
       mario_chet_74: -1640990412
       mario_chet_435: -1572847343
       mario_chet_170: -620747058
@@ -12126,6 +12191,7 @@ TextureImporter:
       mario_chet_182: -507715511
       mario_chet_466: 1747215704
       mario_chet_56: 203089913
+      BiTren: 896550676
       mario_chet_221: -51256882
       mario_chet_31: 378295193
       mario_chet_158: 752318545
