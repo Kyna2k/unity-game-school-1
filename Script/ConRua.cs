@@ -8,7 +8,7 @@ public class ConRua : MonoBehaviour
     public float left, right;
     public float speed;
     private Rigidbody2D Rigidbody2D;
-    public bool isRight = false;
+    public bool isRight = true;
     private bool isDead;
     float scaleLocalY;
     float positionLocalY;
@@ -16,6 +16,8 @@ public class ConRua : MonoBehaviour
     private AudioSource audioSource;
     public GameObject bangdiem;
     public Sprite ruanam;
+    public Animator animator;
+    public Sprite sprite;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +26,7 @@ public class ConRua : MonoBehaviour
         isDead = false;
         Rigidbody2D = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
+        animator = gameObject.GetComponent<Animator>();
         scaleLocalY = gameObject.transform.localScale.y;
         positionLocalY = gameObject.transform.position.y;
     }
@@ -31,35 +34,37 @@ public class ConRua : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 vector3;
-        float x = transform.position.x;
-        if(x < left)
+        if(isDead) return;
+        float potitionX = transform.position.x;
+        if (potitionX < left)
         {
             isRight = true;
         }
-        if(x > right) 
+        if (potitionX > right)
         {
-            isRight= false;
+            isRight = false;
         }
-        if(isRight)
+        Vector3 vector3;
+        if (isRight)
         {
             Vector2 scale = transform.localScale;
-
-            vector3 = new Vector3(1,0,0);
             scale.x *= scale.x > 0 ? -1 : 1;
             transform.localScale = scale;
+            vector3 = new Vector3(1, 0, 0);
         }
         else
         {
             Vector2 scale = transform.localScale;
-            Debug.Log(scale.x);
-            vector3 = new Vector3(-1,0,0);
             scale.x *= scale.x > 0 ? 1 : -1;
             transform.localScale = scale;
 
+            vector3 = new Vector3(-1, 0, 0);
+
         }
         transform.Translate(vector3 * speed * Time.deltaTime);
-        
+
+
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -75,8 +80,8 @@ public class ConRua : MonoBehaviour
                 GameObject scope = Instantiate(bangdiem);
                 scope.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y);
                 Destroy(scope, 0.5f);
-                gameObject.GetComponent<Animator>().SetBool("Kill", true);
                 gameObject.transform.localScale = new Vector2(gameObject.transform.localScale.x, scaleLocalY * -1);
+                gameObject.GetComponent<SpriteRenderer>().sprite = sprite;
                 if (contacts[0].normal.x > 0)
                 {
                     gameObject.transform.position = new Vector2(gameObject.transform.position.x + 0.5f, positionLocalY + 1f);

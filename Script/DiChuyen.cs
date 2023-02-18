@@ -56,8 +56,16 @@ public class DiChuyen : MonoBehaviour
         coin_g = 0; score_g = 0;time_g = 300;
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         color_F = spriteRenderer.color ;
-        time.text = time_g + "";
-        StartCoroutine(time_ne());
+        try
+        {
+            time.text = time_g + "";
+            StartCoroutine(time_ne());
+
+        }
+        catch
+        {
+
+        }
         
     }
 
@@ -77,9 +85,16 @@ public class DiChuyen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        try
+        {
+            coin.text = coin_g + "";
+            score.text = score_g + "";
+        }
+        catch
+        {
+
+        }
         
-        coin.text = coin_g + "";
-        score.text = score_g + "";
         animator.SetBool("isDangDungTrenSan", isDangDungTrenSan);
         animator.SetFloat("vanToc", vanToc);
         if(battu)
