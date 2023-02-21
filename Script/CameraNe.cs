@@ -10,6 +10,7 @@ public class CameraNe : MonoBehaviour
     public GameObject quaidot2;
     public GameObject quaidot3;
     public GameObject cutSean;
+    public GameObject cutSean2;
     private Color blue = new Color(92/255f, 148/255f, 252 / 255f);
     private Color black = new Color(0, 0, 0);
     // Start is called before the first frame update
@@ -17,6 +18,7 @@ public class CameraNe : MonoBehaviour
     public GameObject Mario;
     void Start()
     {
+        gameObject.GetComponent<Camera>().backgroundColor = blue;
     }
 
     // Update is called once per frame
@@ -36,19 +38,47 @@ public class CameraNe : MonoBehaviour
         }
         if (transform.position.x >= vitridot2)
         {
-            quaidot2.SetActive(true);
+            try
+            {
+                quaidot2.SetActive(true);
+
+            }
+            catch
+            {
+
+            }
         }
         if (transform.position.x >= vitridot3)
         {
-            quaidot3.SetActive(true);
+            try
+            {
+                quaidot3.SetActive(true);
+
+            }
+            catch { }
+
         }
         if (transform.position.y == vitricong[1])
         {
-            gameObject.GetComponent<Camera>().backgroundColor = black;
-            cutSean.SetActive(false);
+            try
+            {
+                gameObject.GetComponent<Camera>().backgroundColor = black;
+                cutSean.SetActive(false);
+            }
+            catch
+            {
+
+            }
+            
         }else if (transform.position.y > -7.78f)
         {
             gameObject.GetComponent<Camera>().backgroundColor = blue;
+        }
+        if(transform.position.y == -9.04f)
+        {
+            gameObject.GetComponent<Camera>().backgroundColor = black;
+            Debug.Log("Da vao day");
+            cutSean2.SetActive(false);
         }
     }
 }

@@ -11612,7 +11612,7 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -11633,7 +11633,7 @@ TextureImporter:
         width: 2
         height: 143
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -11654,7 +11654,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -11662,6 +11662,27 @@ TextureImporter:
       bones: []
       spriteID: 97fc6e17a36a50149baf636677c8b0aa
       internalID: -815494827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cancua than ki
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 954
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ace84e6d08010f4ab7f54c0f07faae0
+      internalID: -329452415
       vertices: []
       indices: 
       edges: []
@@ -11834,6 +11855,7 @@ TextureImporter:
       mario_chet_129: 947520962
       mario_chet_122: -1478789947
       mario_chet_436: 1084968676
+      Cancua than ki: -329452415
       mario_chet_99: -1947480490
       mario_chet_334: -1138767928
       mario_chet_274: -1123088316

@@ -9,7 +9,7 @@ public class ConRua : MonoBehaviour
     public float speed;
     private Rigidbody2D Rigidbody2D;
     public bool isRight = true;
-    private bool isDead;
+    public bool isDead;
     float scaleLocalY;
     float positionLocalY;
 
@@ -101,6 +101,8 @@ public class ConRua : MonoBehaviour
             }
             else if (collision.gameObject.tag == "Mario")
             {
+                Debug.Log("x: " + collision.contacts[0].normal.x + " y: " + collision.contacts[0].normal.y);
+
                 if (collision.contacts[0].normal.y < 0)
                 {
                     isDead = true;

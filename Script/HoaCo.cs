@@ -36,7 +36,6 @@ public class HoaCo : MonoBehaviour
     {
         while(true)
         {
-            Debug.Log("hello");
             while (true)
             {
                 item.transform.position = new Vector3(

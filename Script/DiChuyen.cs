@@ -317,7 +317,38 @@ public class DiChuyen : MonoBehaviour
             Destroy(collision.gameObject);
 
         }
-        
+        if(collision.gameObject.tag == "ConRua")
+        {
+            if (((collision.contacts[0].normal.x > 0 || collision.contacts[0].normal.x < 0) && collision.contacts[0].normal.y <= 0) && !collision.gameObject.GetComponent<ConRua>().isDead)
+            {
+                if (bienLon)
+                {
+                    bienLon = false;
+                    coSung = false;
+                    animator.SetBool("BienDoi", bienLon);
+                    animator.SetBool("bienLon", bienLon);
+                    StartCoroutine(SieuNhan());
+                }
+                else
+                {
+                    MarioIsLive = false;
+                    animator.SetBool("chetTrongLong", true);
+                    PlaySounds("Sounds/Die");
+                    try
+                    {
+                        ((CayNam)(collision.transform.parent.gameObject.GetComponent<CayNam>())).speed = 0;
+
+                    }
+                    catch
+                    {
+
+                    }
+                    rigidbody2D.AddForce(new Vector2(0, 200));
+                    gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
+                }
+            }
+           
+        }
 
 
     }
@@ -327,7 +358,7 @@ public class DiChuyen : MonoBehaviour
 
         if (MarioIsLive && !battu)
         {
-            if ((collision.gameObject.tag == "CayNamLeft" || collision.gameObject.tag == "CayNamRight" && !collision.transform.parent.gameObject.GetComponent<CayNam>().isDead ) || collision.gameObject.tag == "CapCap" || collision.gameObject.tag == "ConRua")
+            if ((collision.gameObject.tag == "CayNamLeft" || collision.gameObject.tag == "CayNamRight" && !collision.transform.parent.gameObject.GetComponent<CayNam>().isDead ) || collision.gameObject.tag == "CapCap" )
             {
                 if (bienLon)
                 {
